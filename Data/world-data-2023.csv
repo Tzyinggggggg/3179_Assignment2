@@ -1,5 +1,4 @@
-Country,"Density
-(P/Km2)",Land Area(Km2),Birth Rate,Fertility Rate,Gasoline Price,GDP,Gross tertiary education enrollment (%),Life expectancy,Minimum wage,Official language,Out of pocket health expenditure,Infant mortality,Maternal mortality ratio,Physicians per thousand,Population,Tax revenue (%),Total tax rate,CPI,Unemployment rate,Urban_population,Co2-Emissions,Latitude,Longitude
+Country,"Density(P/Km2)",Land Area(Km2),Birth Rate,Fertility Rate,Gasoline Price,GDP,Gross tertiary education enrollment (%),Life expectancy,Minimum wage,Official language,Out of pocket health expenditure,Infant mortality,Maternal mortality ratio,Physicians per thousand,Population,Tax revenue (%),Total tax rate,CPI,Unemployment rate,Urban_population,Co2-Emissions,Latitude,Longitude
 Afghanistan,60,652230,32.49,4.47,0.7,19101353833,9.70%,64.5,0.43,Pashto,78.40%,48,638,0.28,38041754,9.30%,71.40%,149.9,11.12%,9797273,8672,33.93911,67.709953
 Albania,105,28748,11.78,1.62,1.36,15278077447,55.00%,78.5,1.12,Albanian,56.90%,8,15,1.2,2854191,18.60%,36.60%,119.05,12.33%,1747593,4536,41.153332,20.168331
 Algeria,18,2381741,24.28,3.02,0.28,170000000000,51.40%,76.7,0.95,Arabic,28.10%,20,112,1.72,43053054,37.20%,66.10%,151.36,11.70%,31510100,150006,28.033886,1.659626

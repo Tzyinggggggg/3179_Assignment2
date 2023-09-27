@@ -67,10 +67,10 @@
 					"lookup": "properties.NAME",
 					"from": {
 						"data": {
-							"url": "https://raw.githubusercontent.com/AllyTeh/FIT3179_Data_Visualisation_2/main/Data/monkeypox_by_country.csv"
+							"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/world-data-2023.csv"
 						},
 						"key": "Country",
-						"fields": ["Confirmed_Cases"]
+						"fields": ["Density (P/Km2)"]
 					}
 				},
 				{ "calculate": "datum.Confirmed_Cases + 0", "as": "Confirmed Cases" }
