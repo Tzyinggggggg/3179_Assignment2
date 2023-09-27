@@ -70,22 +70,19 @@
 							"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/world-data-2023.csv"
 						},
 						"key": "Country",
-						"fields": ["Density(P/Km2)"]
+						"fields": ["Density"]
 					}
 				},
-				{
-					"calculate": "datum.Density(P/Km2) + 0",
-					"as": "Population Density(P/Km2)"
-				}
+				{ "calculate": "datum.Density + 0", "as": "Density" }
 			],
 			"mark": { "type": "geoshape" },
 			"encoding": {
 				"color": {
-					"field": "Density(P/Km2)",
+					"field": "Density",
 					"type": "quantitative",
 					"scale": {
 						"type": "threshold",
-						"domain": [20, 100, 200, 300, 700, 900, 1000, 2000, 2500],
+						"domain": [0, 30, 60, 90, 50],
 						"range": [
 							"#ffcd73",
 							"#ffb27b",
@@ -108,7 +105,7 @@
 				},
 				"tooltip": [
 					{ "field": "properties.NAME", "type": "nominal", "title": "Country" },
-					{ "field": "Density(P/Km2)", "type": "quantitative" }
+					{ "field": "Density", "type": "quantitative" }
 				]
 			}
 		}
