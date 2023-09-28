@@ -1,162 +1,1 @@
-Country,GDP,Continent
-Afghanistan,19101353833,Asia
-Albania,15278077447,Europe
-Algeria,1.7E+11,Africa
-Andorra,3154057987,Europe
-Angola,94635415870,Africa
-Argentina,4.5E+11,South America
-Armenia,13672802158,Asia
-Australia,1.39E+12,Oceania
-Austria,4.46E+11,Europe
-Azerbaijan,39207000000,Asia
-The Bahamas,12827000000,North America
-Bangladesh,3.03E+11,Asia
-Belarus,63080457023,Europe
-Belgium,5.3E+11,Europe
-Belize,1879613600,North America
-Benin,14390709095,Africa
-Bhutan,2446674101,Asia
-Bolivia,40895322865,South America
-Bosnia and Herzegovina,20047848435,Europe
-Botswana,18340510789,Africa
-Brazil,1.84E+12,South America
-Brunei,13469422941,Asia
-Bulgaria,86000000000,Europe
-Burkina Faso,15745810235,Africa
-Burundi,3012334882,Africa
-Ivory Coast,58792205642,Africa
-Cambodia,27089389787,Asia
-Cameroon,38760467033,Africa
-Canada,1.74E+12,North America
-Central African Republic,2220307369,Africa
-Chad,11314951343,Africa
-Chile,2.82E+11,South America
-People's Republic of China,1.99E+13,Asia
-Colombia,3.24E+11,South America
-Republic of the Congo,10820591131,Africa
-Denmark,3.48E+11,Europe
-Djibouti,3318716359,Africa
-Dominica,596033333,North America
-Dominican Republic,88941298258,North America
-Ecuador,1.07E+11,South America
-Egypt,3.03E+11,Africa
-El Salvador,27022640000,North America
-Equatorial Guinea,11026774945,Africa
-Eritrea,2065001626,Africa
-Estonia,31386949981,Europe
-Eswatini,3791304348,Africa
-Ethiopia,96107662398,Africa
-Fiji,5535548972,Oceania
-Finland,2.69E+11,Europe
-France,2.72E+12,Europe
-Gabon,16657960228,Africa
-The Gambia,1763819048,Africa
-Georgia,17743195770,Europe
-Germany,3.85E+12,Europe
-Ghana,66983634224,Africa
-Greece,2.1E+11,Europe
-Guinea,13590281809,Africa
-Guinea-Bissau,1340389411,Africa
-Guyana,4280443645,South America
-Haiti,8498981821,North America
-Honduras,25095395475,North America
-Hungary,1.61E+11,Europe
-Iceland,24188035739,Europe
-India,2.61E+12,Asia
-Indonesia,1.12E+12,Asia
-Iran,4.45E+11,Asia
-Iraq,2.34E+11,Asia
-Republic of Ireland,3.89E+11,Europe
-Israel,3.95E+11,Asia
-Italy,2E+12,Europe
-Jamaica,16458071068,North America
-Japan,5.08E+12,Asia
-Jordan,43743661972,Asia
-Kazakhstan,1.8E+11,Asia
-Kenya,95503088538,Africa
-Kuwait,1.35E+11,Asia
-Kyrgyzstan,8454619608,Asia
-Laos,18173839128,Asia
-Latvia,34117202555,Europe
-Lebanon,53367042272,Asia
-Lesotho,2460072444,Africa
-Liberia,3070518100,Africa
-Libya,52076250948,Africa
-Lithuania,54219315600,Europe
-Luxembourg,71104919108,Europe
-Madagascar,14083906357,Africa
-Malawi,7666704427,Africa
-Malaysia,3.65E+11,Asia
-Maldives,5729248472,Asia
-Mauritania,7593752450,Africa
-Mexico,1.26E+12,North America
-Moldova,11955435457,Europe
-Monaco,7184844193,Europe
-Mongolia,13852850259,Asia
-Montenegro,5494736901,Europe
-Morocco,1.19E+11,Africa
-Mozambique,14934159926,Africa
-Myanmar,76085852617,Asia
-Namibia,12366527719,Africa
-Nepal,30641380604,Asia
-Netherlands,9.09E+11,Europe
-New Zealand,2.07E+11,Oceania
-Nicaragua,12520915291,North America
-Niger,12928145120,Africa
-Nigeria,4.48E+11,Africa
-North Korea,32100000000,Asia
-Norway,4.03E+11,Europe
-Oman,76983094928,Asia
-Pakistan,3.04E+11,Asia
-Panama,66800800000,North America
-Papua New Guinea,24969611435,Oceania
-Paraguay,38145288940,South America
-Peru,2.27E+11,South America
-Philippines,3.77E+11,Asia
-Poland,5.92E+11,Europe
-Portugal,2.38E+11,Europe
-Qatar,1.83E+11,Asia
-Romania,2.5E+11,Europe
-Russia,1.7E+12,Europe
-Rwanda,10122472590,Africa
-Saudi Arabia,7.93E+11,Asia
-Senegal,23578084052,Africa
-Serbia,51409167351,Europe
-Sierra Leone,3941474311,Africa
-Singapore,3.72E+11,Asia
-Slovakia,1.05E+11, Europe
-Slovenia,53742159517,Europe
-Solomon Islands,1425074226,Oceania
-Somalia,4720727278,Africa
-South Africa,3.51E+11,Africa
-South Korea,2.03E+12,Asia
-South Sudan,11997800751,Africa
-Spain,1.39E+12,Europe
-Sri Lanka,84008783756,Asia
-Sudan,18902284476,Africa
-Suriname,3985250737,South America
-Sweden,5.31E+11,Europe
-Switzerland,7.03E+11,Europe
-Syria,40405006007,Asia
-Tajikistan,8116626794,Asia
-Tanzania,63177068175,Africa
-Thailand,5.44E+11,Asia
-East Timor,1673540300,Asia
-Togo,5459979417,Africa
-Trinidad and Tobago,24100202834,North America
-Tunisia,38797709924,Africa
-Turkey,7.54E+11,Europe/Asia
-Turkmenistan,40761142857,Asia
-Uganda,34387229486,Africa
-Ukraine,1.54E+11,Europe
-United Arab Emirates,4.21E+11,Asia
-United Kingdom,2.83E+12,Europe
-United States of America,2.14E+13,North America
-Uruguay,56045912952,South America
-Uzbekistan,57921286440,Asia
-Vanuatu,917058851,Oceania
-Venezuela,4.82E+11,South America
-Vietnam,2.62E+11,Asia
-Yemen,26914402224,Asia
-Zambia,23064722446,Africa
-Zimbabwe,21440758800,Africa
+Country,GDP,Continent,PopulationAfghanistan,19101353833,Asia,38041754Albania,15278077447,Europe,2854191Algeria,1.70E+11,Africa,43053054Andorra,3154057987,Europe,77142Angola,94635415870,Africa,31825295Argentina,4.50E+11,South America,44938712Armenia,13672802158,Asia,2957731Australia,1.39E+12,Oceania,25766605Austria,4.46E+11,Europe,8877067Azerbaijan,39207000000,Asia,10023318The Bahamas,12827000000,North America,389482Bangladesh,3.03E+11,Asia,167310838Belarus,63080457023,Europe,9466856Belgium,5.30E+11,Europe,11484055Belize,1879613600,North America,390353Benin,14390709095,Africa,11801151Bhutan,2446674101,Asia,727145Bolivia,40895322865,South America,11513100Bosnia and Herzegovina,20047848435,Europe,3301000Botswana,18340510789,Africa,2346179Brazil,1.84E+12,South America,212559417Brunei,13469422941,Asia,433285Bulgaria,86000000000,Europe,6975761Burkina Faso,15745810235,Africa,20321378Burundi,3012334882,Africa,11530580Ivory Coast,58792205642,Africa,25716544Cambodia,27089389787,Asia,16486542Cameroon,38760467033,Africa,25876380Canada,1.74E+12,North America,36991981Central African Republic,2220307369,Africa,4745185Chad,11314951343,Africa,15946876Chile,2.82E+11,South America,18952038People's Republic of China,1.99E+13,Asia,1397715000Colombia,3.24E+11,South America,50339443Republic of the Congo,10820591131,Africa,5380508Denmark,3.48E+11,Europe,5047561Djibouti,3318716359,Africa,4067500Dominica,596033333,North America,11333483Dominican Republic,88941298258,North America,1198575Ecuador,1.07E+11,South America,10669709Egypt,3.03E+11,Africa,86790567El Salvador,27022640000,North America,5818553Equatorial Guinea,11026774945,Africa,973560Eritrea,2065001626,Africa,71808Estonia,31386949981,Europe,10738958Eswatini,3791304348,Africa,17373662Ethiopia,96107662398,Africa,100388073Fiji,5535548972,Oceania,6453553Finland,2.69E+11,Europe,1355986France,2.72E+12,Europe,6333135Gabon,16657960228,Africa,1331824The Gambia,1763819048,Africa,1093238Georgia,17743195770,Europe,112078730Germany,3.85E+12,Europe,889953Ghana,66983634224,Africa,5520314Greece,2.10E+11,Europe,67059887Guinea,13590281809,Africa,2172579Guinea-Bissau,1340389411,Africa,2347706Guyana,4280443645,South America,3720382Haiti,8498981821,North America,83132799Honduras,25095395475,North America,30792608Hungary,1.61E+11,Europe,10716322Iceland,24188035739,Europe,12771246India,2.61E+12,Asia,1920922Indonesia,1.12E+12,Asia,782766Iran,4.45E+11,Asia,11263077Iraq,2.34E+11,Asia,9746117Republic of Ireland,3.89E+11,Europe,9769949Israel,3.95E+11,Asia,361313Italy,2.00E+12,Europe,1366417754Jamaica,16458071068,North America,270203917Japan,5.08E+12,Asia,82913906Jordan,43743661972,Asia,39309783Kazakhstan,1.80E+11,Asia,5007069Kenya,95503088538,Africa,9053300Kuwait,1.35E+11,Asia,60297396Kyrgyzstan,8454619608,Asia,2948279Laos,18173839128,Asia,126226568Latvia,34117202555,Europe,10101694Lebanon,53367042272,Asia,18513930Lesotho,2460072444,Africa,52573973Liberia,3070518100,Africa,4207083Libya,52076250948,Africa,6456900Lithuania,54219315600,Europe,7169455Luxembourg,71104919108,Europe,1912789Madagascar,14083906357,Africa,6855713Malawi,7666704427,Africa,2125268Malaysia,3.65E+11,Asia,4937374Maldives,5729248472,Asia,6777452Mauritania,7593752450,Africa,2786844Mexico,1.26E+12,North America,645397Moldova,11955435457,Europe,26969307Monaco,7184844193,Europe,18628747Mongolia,13852850259,Asia,32447385Montenegro,5494736901,Europe,530953Morocco,1.19E+11,Africa,4525696Mozambique,14934159926,Africa,126014024Myanmar,76085852617,Asia,2657637Namibia,12366527719,Africa,38964Nepal,30641380604,Asia,3225167Netherlands,9.09E+11,Europe,622137New Zealand,2.07E+11,Oceania,36910560Nicaragua,12520915291,North America,30366036Niger,12928145120,Africa,54045420Nigeria,4.48E+11,Africa,2494530North Korea,32100000000,Asia,28608710Norway,4.03E+11,Europe,17332850Oman,76983094928,Asia,4841000Pakistan,3.04E+11,Asia,6545502Panama,66800800000,North America,23310715Papua New Guinea,24969611435,Oceania,200963599Paraguay,38145288940,South America,25666161Peru,2.27E+11,South America,5347896Philippines,3.77E+11,Asia,5266535Poland,5.92E+11,Europe,216565318Portugal,2.38E+11,Europe,4246439Qatar,1.83E+11,Asia,8776109Romania,2.50E+11,Europe,7044636Russia,1.70E+12,Europe,32510453Rwanda,10122472590,Africa,108116615Saudi Arabia,7.93E+11,Asia,37970874Senegal,23578084052,Africa,10269417Serbia,51409167351,Europe,2832067Sierra Leone,3941474311,Africa,19356544Singapore,3.72E+11,Asia,144373535Slovakia,1.05E+11, Europe,12626950Slovenia,53742159517,Europe,34268528Solomon Islands,1425074226,Oceania,16296364Somalia,4720727278,Africa,6944975South Africa,3.51E+11,Africa,7813215South Korea,2.03E+12,Asia,5703569South Sudan,11997800751,Africa,5454073Spain,1.39E+12,Europe,2087946Sri Lanka,84008783756,Asia,669823Sudan,18902284476,Africa,15442905Suriname,3985250737,South America,58558270Sweden,5.31E+11,Europe,51709098Switzerland,7.03E+11,Europe,11062113Syria,40405006007,Asia,47076781Tajikistan,8116626794,Asia,21803000Tanzania,63177068175,Africa,42813238Thailand,5.44E+11,Asia,581372East Timor,1673540300,Asia,10285453Togo,5459979417,Africa,8574832Trinidad and Tobago,24100202834,North America,17070135Tunisia,38797709924,Africa,9321018Turkey,7.54E+11,Europe/Asia,58005463Turkmenistan,40761142857,Asia,69625582Uganda,34387229486,Africa,3500000Ukraine,1.54E+11,Europe,8082366United Arab Emirates,4.21E+11,Asia,1394973United Kingdom,2.83E+12,Europe,11694719United States of America,2.14E+13,North America,83429615Uruguay,56045912952,South America,5942089Uzbekistan,57921286440,Asia,44269594Vanuatu,917058851,Oceania,44385155Venezuela,4.82E+11,South America,9770529Vietnam,2.62E+11,Asia,66834405Yemen,26914402224,Asia,328239523Zambia,23064722446,Africa,3461734Zimbabwe,21440758800,Africa,33580650,,,299882,,,28515829,,,96462106,,,29161922,,,17861030,,,14645468
