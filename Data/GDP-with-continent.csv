@@ -1,4 +1,4 @@
-Country,Population,GDP per Capita,Life expectancy,Continent
+Country,Population,GDP_per_Capita,Life_Expectancy,Continent
 Afghanistan,38041754,502.1154869,64.5,Asia
 Albania,2854191,5352.857411,78.5,Europe
 Algeria,43053054,3948.616514,76.7,Africa
