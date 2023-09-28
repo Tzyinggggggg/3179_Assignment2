@@ -1,1 +1,168 @@
-Country,Continent,Unemployment rateAfghanistan,Asia,11.12%Albania,Europe,12.33%Algeria,Africa,11.70%Andorra,Europe,Angola,Africa,6.89%Argentina,South America,9.79%Armenia,Asia,16.99%Australia,Oceania,5.27%Austria,Europe,4.67%Azerbaijan,Asia,5.51%The Bahamas,North America,10.36%Bangladesh,Asia,4.19%Belarus,Europe,4.59%Belgium,Europe,5.59%Belize,North America,6.41%Benin,Africa,2.23%Bhutan,Asia,2.34%Bolivia,South America,3.50%Bosnia and Herzegovina,Europe,18.42%Botswana,Africa,18.19%Brazil,South America,12.08%Brunei,Asia,9.12%Bulgaria,Europe,4.34%Burkina Faso,Africa,6.26%Burundi,Africa,1.43%Ivory Coast,Africa,3.32%Cambodia,Asia,0.68%Cameroon,Africa,3.38%Canada,North America,5.56%Central African Republic,Africa,3.68%Chad,Africa,1.89%Chile,South America,7.09%People's Republic of China,Asia,4.32%Colombia,South America,9.71%Republic of the Congo,Africa,9.47%Costa Rica,North America,11.85%Croatia,Europe,6.93%Cuba,North America,1.64%Cyprus,Europe,7.27%Czech Republic,Europe,1.93%Democratic Republic of the Congo,Africa,4.24%Denmark,Europe,4.91%Djibouti,Africa,10.30%Dominica,North America,Dominican Republic,North America,5.84%Ecuador,South America,3.97%Egypt,Africa,10.76%El Salvador,North America,4.11%Equatorial Guinea,Africa,6.43%Eritrea,Africa,5.14%Estonia,Europe,5.11%eswatini,Africa,Ethiopia,Africa,2.08%Fiji,Oceania,4.10%Finland,Europe,6.59%France,Europe,8.43%Gabon,Africa,20.00%The Gambia,Africa,9.06%Georgia,Asia,14.40%Germany,Europe,3.04%Ghana,Africa,4.33%Greece,Europe,17.24%Guinea,Africa,4.30%Guinea-Bissau,Africa,2.47%Guyana,South America,11.85%Haiti,North America,13.78%Honduras,North America,5.39%Hungary,Europe,3.40%Iceland,Europe,2.84%India,Asia,5.36%Indonesia,Asia,4.69%Iran,Asia,11.38%Iraq,Asia,12.82%Republic of Ireland,Europe,4.93%Israel,Asia,3.86%Italy,Europe,9.89%Jamaica,North America,8.00%Japan,Asia,2.29%Jordan,Asia,14.72%Kazakhstan,Asia,4.59%Kenya,Africa,2.64%Kuwait,Asia,2.18%Kyrgyzstan,Asia,6.33%Laos,Asia,0.63%Latvia,Europe,6.52%Lebanon,Asia,6.23%Lesotho,Africa,23.41%Liberia,Africa,2.81%Libya,Africa,18.56%Lithuania,Europe,6.35%Luxembourg,Europe,5.36%Madagascar,Africa,1.76%Malawi,Africa,5.65%Malaysia,Asia,3.32%Maldives,Asia,6.14%Mauritania,Africa,9.55%Mexico,North America,3.42%Moldova,Europe,5.47%Monaco,Europe,Mongolia,Asia,6.01%Montenegro,Europe,14.88%Morocco,Africa,9.02%Mozambique,Africa,3.24%Myanmar,Asia,1.58%Namibia,Africa,20.27%Nepal,Asia,1.41%Netherlands,Europe,3.20%New Zealand,Oceania,4.07%Nicaragua,North America,6.84%Niger,Africa,0.47%Nigeria,Africa,8.10%North Korea,Asia,2.74%Norway,Europe,3.35%Oman,Asia,2.67%Pakistan,Asia,4.45%Panama,North America,3.90%Papua New Guinea,Oceania,2.46%Paraguay,South America,4.81%Peru,South America,3.31%Philippines,Asia,2.15%Poland,Europe,3.47%Portugal,Europe,6.33%Qatar,Asia,0.09%Romania,Europe,3.98%Russia,Europe,4.59%Rwanda,Africa,1.03%Saudi Arabia,Asia,5.93%Senegal,Africa,6.60%Serbia,Europe,12.69%Sierra Leone,Africa,4.43%Singapore,Asia,4.11%Slovakia,Europe,5.56%Slovenia,Europe,4.20%Solomon Islands,Oceania,0.58%Somalia,Africa,11.35%South Africa,Africa,28.18%South Korea,Asia,4.15%South Sudan,Africa,12.24%Spain,Europe,13.96%Sri Lanka,Asia,4.20%Sudan,Africa,16.53%Suriname,South America,7.33%Sweden,Europe,6.48%Switzerland,Europe,4.58%Syria,Asia,8.37%Tajikistan,Asia,11.02%Tanzania,Africa,1.98%Thailand,Asia,0.75%East Timor,Asia,4.55%Togo,Africa,2.04%Trinidad and Tobago,North America,2.69%Tunisia,Africa,16.02%Turkey,Europe,13.49%Turkmenistan,Asia,3.91%Uganda,Africa,1.84%Ukraine,Europe,8.88%United Arab Emirates,Asia,2.35%United Kingdom,Europe,3.85%United States of America,North America,14.70%Uruguay,South America,8.73%Uzbekistan,Asia,5.92%Vanuatu,Oceania,4.39%Venezuela,South America,8.80%Vietnam,Asia,2.01%Yemen,Asia,12.91%Zambia,Africa,11.43%Zimbabwe,Africa,4.95%
+Country,Continent,Unemployment_Rate
+Afghanistan,Asia,11.12%
+Albania,Europe,12.33%
+Algeria,Africa,11.70%
+Andorra,Europe,
+Angola,Africa,6.89%
+Argentina,South America,9.79%
+Armenia,Asia,16.99%
+Australia,Oceania,5.27%
+Austria,Europe,4.67%
+Azerbaijan,Asia,5.51%
+The Bahamas,North America,10.36%
+Bangladesh,Asia,4.19%
+Belarus,Europe,4.59%
+Belgium,Europe,5.59%
+Belize,North America,6.41%
+Benin,Africa,2.23%
+Bhutan,Asia,2.34%
+Bolivia,South America,3.50%
+Bosnia and Herzegovina,Europe,18.42%
+Botswana,Africa,18.19%
+Brazil,South America,12.08%
+Brunei,Asia,9.12%
+Bulgaria,Europe,4.34%
+Burkina Faso,Africa,6.26%
+Burundi,Africa,1.43%
+Ivory Coast,Africa,3.32%
+Cambodia,Asia,0.68%
+Cameroon,Africa,3.38%
+Canada,North America,5.56%
+Central African Republic,Africa,3.68%
+Chad,Africa,1.89%
+Chile,South America,7.09%
+People's Republic of China,Asia,4.32%
+Colombia,South America,9.71%
+Republic of the Congo,Africa,9.47%
+Costa Rica,North America,11.85%
+Croatia,Europe,6.93%
+Cuba,North America,1.64%
+Cyprus,Europe,7.27%
+Czech Republic,Europe,1.93%
+Democratic Republic of the Congo,Africa,4.24%
+Denmark,Europe,4.91%
+Djibouti,Africa,10.30%
+Dominica,North America,
+Dominican Republic,North America,5.84%
+Ecuador,South America,3.97%
+Egypt,Africa,10.76%
+El Salvador,North America,4.11%
+Equatorial Guinea,Africa,6.43%
+Eritrea,Africa,5.14%
+Estonia,Europe,5.11%
+eswatini,Africa,
+Ethiopia,Africa,2.08%
+Fiji,Oceania,4.10%
+Finland,Europe,6.59%
+France,Europe,8.43%
+Gabon,Africa,20.00%
+The Gambia,Africa,9.06%
+Georgia,Asia,14.40%
+Germany,Europe,3.04%
+Ghana,Africa,4.33%
+Greece,Europe,17.24%
+Guinea,Africa,4.30%
+Guinea-Bissau,Africa,2.47%
+Guyana,South America,11.85%
+Haiti,North America,13.78%
+Honduras,North America,5.39%
+Hungary,Europe,3.40%
+Iceland,Europe,2.84%
+India,Asia,5.36%
+Indonesia,Asia,4.69%
+Iran,Asia,11.38%
+Iraq,Asia,12.82%
+Republic of Ireland,Europe,4.93%
+Israel,Asia,3.86%
+Italy,Europe,9.89%
+Jamaica,North America,8.00%
+Japan,Asia,2.29%
+Jordan,Asia,14.72%
+Kazakhstan,Asia,4.59%
+Kenya,Africa,2.64%
+Kuwait,Asia,2.18%
+Kyrgyzstan,Asia,6.33%
+Laos,Asia,0.63%
+Latvia,Europe,6.52%
+Lebanon,Asia,6.23%
+Lesotho,Africa,23.41%
+Liberia,Africa,2.81%
+Libya,Africa,18.56%
+Lithuania,Europe,6.35%
+Luxembourg,Europe,5.36%
+Madagascar,Africa,1.76%
+Malawi,Africa,5.65%
+Malaysia,Asia,3.32%
+Maldives,Asia,6.14%
+Mauritania,Africa,9.55%
+Mexico,North America,3.42%
+Moldova,Europe,5.47%
+Monaco,Europe,
+Mongolia,Asia,6.01%
+Montenegro,Europe,14.88%
+Morocco,Africa,9.02%
+Mozambique,Africa,3.24%
+Myanmar,Asia,1.58%
+Namibia,Africa,20.27%
+Nepal,Asia,1.41%
+Netherlands,Europe,3.20%
+New Zealand,Oceania,4.07%
+Nicaragua,North America,6.84%
+Niger,Africa,0.47%
+Nigeria,Africa,8.10%
+North Korea,Asia,2.74%
+Norway,Europe,3.35%
+Oman,Asia,2.67%
+Pakistan,Asia,4.45%
+Panama,North America,3.90%
+Papua New Guinea,Oceania,2.46%
+Paraguay,South America,4.81%
+Peru,South America,3.31%
+Philippines,Asia,2.15%
+Poland,Europe,3.47%
+Portugal,Europe,6.33%
+Qatar,Asia,0.09%
+Romania,Europe,3.98%
+Russia,Europe,4.59%
+Rwanda,Africa,1.03%
+Saudi Arabia,Asia,5.93%
+Senegal,Africa,6.60%
+Serbia,Europe,12.69%
+Sierra Leone,Africa,4.43%
+Singapore,Asia,4.11%
+Slovakia,Europe,5.56%
+Slovenia,Europe,4.20%
+Solomon Islands,Oceania,0.58%
+Somalia,Africa,11.35%
+South Africa,Africa,28.18%
+South Korea,Asia,4.15%
+South Sudan,Africa,12.24%
+Spain,Europe,13.96%
+Sri Lanka,Asia,4.20%
+Sudan,Africa,16.53%
+Suriname,South America,7.33%
+Sweden,Europe,6.48%
+Switzerland,Europe,4.58%
+Syria,Asia,8.37%
+Tajikistan,Asia,11.02%
+Tanzania,Africa,1.98%
+Thailand,Asia,0.75%
+East Timor,Asia,4.55%
+Togo,Africa,2.04%
+Trinidad and Tobago,North America,2.69%
+Tunisia,Africa,16.02%
+Turkey,Europe,13.49%
+Turkmenistan,Asia,3.91%
+Uganda,Africa,1.84%
+Ukraine,Europe,8.88%
+United Arab Emirates,Asia,2.35%
+United Kingdom,Europe,3.85%
+United States of America,North America,14.70%
+Uruguay,South America,8.73%
+Uzbekistan,Asia,5.92%
+Vanuatu,Oceania,4.39%
+Venezuela,South America,8.80%
+Vietnam,Asia,2.01%
+Yemen,Asia,12.91%
+Zambia,Africa,11.43%
+Zimbabwe,Africa,4.95%
