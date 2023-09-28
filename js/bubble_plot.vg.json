@@ -1,73 +1,160 @@
 {
-	"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-	"description": "Bubble",
-	"width": "container",
-	"title": {
-		"text": "Relationship between life expectancy and income, 2017",
-		"offset": 10
-	},
+	"width": 1000,
+	"height": 600,
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"description": "BUBBLEPLOT",
 	"data": {
-		"url": "https://www.trafforddatalab.io/interactive_graphics_companion/data/gapminder.csv"
+		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/GDP-with-continent.csv"
 	},
-	"transform": [
-		{ "filter": { "timeUnit": "year", "field": "year", "equal": 2017 } }
-	],
-	"mark": {
-		"type": "circle",
-		"opacity": 0.8,
-		"stroke": "#000000",
-		"strokeWidth": 0.5
-	},
-	"encoding": {
-		"y": {
-			"field": "lifeExp",
-			"type": "quantitative",
-			"scale": { "zero": false },
-			"axis": { "title": "Life expectancy" }
-		},
-		"x": {
-			"field": "gdpPercap",
-			"type": "quantitative",
-			"scale": { "type": "log" },
-			"axis": { "grid": false, "title": "Income per person", "format": "$,.0f" }
-		},
-		"size": {
-			"field": "pop",
-			"type": "quantitative",
-			"scale": { "range": [0, 1000] },
-			"legend": false
-		},
-		"color": {
-			"field": "region",
-			"type": "nominal",
-			"scale": {
-				"domain": ["Africa", "Americas", "Asia", "Europe"],
-				"range": ["#08C5ED", "#80D322", "#FF6973", "#FFDC25"]
-			},
-			"legend": false
-		},
-		"tooltip": [
-			{ "field": "country", "type": "nominal", "title": "Country" },
-			{ "field": "region", "type": "nominal", "title": "Region" },
-			{
-				"field": "lifeExp",
-				"type": "quantitative",
-				"title": "Age (years)",
-				"format": ".1f"
-			},
-			{
-				"field": "gdpPercap",
-				"type": "quantitative",
-				"title": "GDP per capita",
-				"format": "$,.0f"
-			},
-			{
-				"field": "pop",
-				"type": "quantitative",
-				"title": "Population",
-				"format": ",.0f"
+	"params": [
+		{
+			"name": "Population_Above",
+			"value": 0,
+			"bind": {
+				"input": "range",
+				"min": 0,
+				"max": 100000000,
+				"step": 1000000,
+				"name": "Minimum Population: "
 			}
-		]
+		},
+		{
+			"name": "Continent_selection",
+			"bind": {
+				"input": "select",
+				"options": [
+					null,
+					"North America",
+					"South America",
+					"Europe",
+					"Africa",
+					"Asia",
+					"Oceania"
+				],
+				"labels": [
+					"Show All",
+					"North America",
+					"South America",
+					"Europe",
+					"Africa",
+					"Asia",
+					"Oceania"
+				],
+				"name": "Continent Selection: "
+			}
+		}
+	],
+	"transform": [
+		{ "filter": "datum.Continent != ''" },
+		{ "filter": "datum.GDP_per_Capita > 0" },
+		{ "filter": "datum.Life_Expectancy > 0" },
+		{
+			"filter": "Continent_selection == null || datum.Continent == Continent_selection"
+		},
+		{ "filter": "datum.Population > Population_Above" }
+	],
+	"encoding": {
+		"x": {
+			"field": "Life_Expectancy",
+			"type": "quantitative",
+			"scale": { "type": "log", "domain": [50, 100] },
+			"title": "Life Expectancy",
+			"axis": { "tickCount": 6, "labelFontSize": 15, "titleFontSize": 20 }
+		},
+		"y": {
+			"field": "GDP_per_Capita",
+			"type": "quantitative",
+			"scale": { "type": "log", "domain": [200, 200000] },
+			"title": "GDP per Capita",
+			"axis": { "tickCount": 6, "labelFontSize": 15, "titleFontSize": 20 }
+		}
 	},
-	"config": { "style": { "cell": { "stroke": "transparent" } } }
+	"layer": [
+		{
+			"selection": {
+				"continent_highlight": {
+					"type": "multi",
+					"fields": ["Continent"],
+					"bind": "legend"
+				}
+			},
+			"mark": { "type": "circle", "stroke": "black", "strokeWidth": 0.5 },
+			"encoding": {
+				"size": {
+					"field": "Population",
+					"type": "quantitative",
+					"scale": {
+						"type": "threshold",
+						"domain": [10000000, 100000000, 300000000, 700000000, 800000000],
+						"range": [200, 400, 800, 1200, 1600, 2500]
+					},
+					"format": ",",
+					"title": "Population",
+					"legend": {
+						"format": ",.2s",
+						"labelFontSize": 15,
+						"titleFontSize": 20
+					}
+				},
+				"color": {
+					"field": "Continent",
+					"type": "nominal",
+					"title": "Continent",
+					"legend": {
+						"title": "Continent",
+						"labelFontSize": 15,
+						"titleFontSize": 20
+					}
+				},
+				"opacity": {
+					"condition": { "selection": "continent_highlight", "value": 1 },
+					"value": 0.2
+				},
+				"tooltip": [
+					{ "field": "Country", "type": "nominal", "title": "Country" },
+					{ "field": "Continent", "type": "nominal", "title": "Continent" },
+					{
+						"field": "Population",
+						"type": "quantitative",
+						"format": ",",
+						"title": "Population"
+					},
+					{
+						"field": "Life_Expectancy",
+						"type": "quantitative",
+						"format": ",",
+						"title": "Life_Expectancy"
+					},
+					{
+						"field": "GDP_per_Capita",
+						"type": "quantitative",
+						"format": ",",
+						"title": "GDP per Capita"
+					}
+				]
+			}
+		},
+		{
+			"mark": {
+				"type": "text",
+				"align": "center",
+				"baseline": "middle",
+				"dy": 10,
+				"fontSize": 15,
+				"fontStyle": "bolder"
+			},
+			"encoding": {
+				"text": { "field": "location", "type": "nominal" },
+				"color": { "value": "black" },
+				"opacity": {
+					"condition": {
+						"test": "datum.location == 'China' || datum.location == 'Singapore' || datum.location == 'Australia' || datum.location == 'New Zealand' || datum.location == 'Malaysia' || datum.location == 'United Kingdom' ||  datum.location == 'United States'",
+						"value": 1
+					},
+					"value": 0
+				}
+			}
+		}
+	],
+	"config": {}
 }
