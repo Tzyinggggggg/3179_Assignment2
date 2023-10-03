@@ -1,1 +1,11 @@
-Country,Continent,GDP,Gross tertiary education enrollment,Life expectancy,Minimum wage,Unemployment rate,Urban_population,Co2-EmissionsUnited States of America,North America,2.14E+13,88.20%,78.5,7.25,14.70%,270663028,5006302People's Republic of China,Asia,1.99E+13,50.60%,77,0.87,4.32%,842933962,9893038Japan,Asia,5.08E+12,63.20%,84.2,6.77,2.29%,115782416,1135886Germany,Europe,3.85E+12,70.20%,80.9,9.99,3.04%,64324835,727973India,Asia,2.61E+12,28.10%,69.4,0.3,5.36%,471031528,2407672United Kingdom,Europe,2.83E+12,60.00%,81.3,10.13,3.85%,55908316,379025France,Europe,2.72E+12,65.60%,82.5,11.16,8.43%,54123364,303276Russia,Europe,1.7E+12,81.90%,72.7,0.53,4.59%,107683889,1732027Australia,Ocenia,1.39E+12,113.10%,82.7,13.59,5.27%,21844756,375908Malaysia,Asia,3.65E+11,45.10%,76,0.93,3.32%,24475766,248289
+Country,Continent,GDP,Gross tertiary education enrollment,Life expectancy,Minimum wage,Unemployment rate,Urban_population,Co2-Emissions
+United States of America,North America,2.14E+13,88.20%,78.5,7.25,14.70,270663028,5006302
+People's Republic of China,Asia,1.99E+13,50.60%,77,0.87,4.32,842933962,9893038
+Japan,Asia,5.08E+12,63.20%,84.2,6.77,2.29,115782416,1135886
+Germany,Europe,3.85E+12,70.20%,80.9,9.99,3.04,64324835,727973
+India,Asia,2.61E+12,28.10%,69.4,0.3,5.36,471031528,2407672
+United Kingdom,Europe,2.83E+12,60.00%,81.3,10.13,3.85,55908316,379025
+France,Europe,2.72E+12,65.60%,82.5,11.16,8.43,54123364,303276
+Russia,Europe,1.7E+12,81.90%,72.7,0.53,4.59,107683889,1732027
+Australia,Ocenia,1.39E+12,113.10%,82.7,13.59,5.27,21844756,375908
+Malaysia,Asia,3.65E+11,45.10%,76,0.93,3.32,24475766,248289
