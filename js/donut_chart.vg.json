@@ -1,0 +1,147 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"width": 600,
+	"height": 700,
+	"title": {
+		"text": "Top 15 on demand Occupation in the World",
+		"fontSize": 14,
+		"font": "Verdana"
+	},
+	"data": {
+		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Top15-In-DemandProfessionsDataset.csv"
+	},
+
+	"params": [
+		{
+			"name": "select_sector",
+			"bind": {
+				"input": "select",
+				"options": [
+					"All Sector",
+					"Technology",
+					"Science & Engineering",
+					"Healthcare",
+					"Accountancy",
+					"Construction",
+					"Education",
+					"Sales"
+				],
+				"labels": [
+					"All Sector",
+					"Technology",
+					"Science & Engineering",
+					"Healthcare",
+					"Accountancy",
+					"Construction",
+					"Education",
+					"Sales"
+				],
+				"name": "Select Sector:"
+			}
+		}
+	],
+	"transform": [
+		{
+			"filter": "if(select_sector !=null, datum.Sector == select_sector, datum.Sector == 'All Sector')"
+		}
+	],
+	"encoding": {
+		"theta": {
+			"field": "Count",
+			"type": "quantitative",
+			"scale": {
+				"type": "linear"
+			},
+			"stack": true
+		},
+		"color": {
+			"field": "Occupation",
+			"type": "nominal",
+			"scale": {
+				"domain": [
+					"Software engineers and developers",
+					"Electronics engineers",
+					"Mechanical engineers",
+					"Nurses",
+					"Doctors and medical practitioners",
+					"Civil engineers",
+					"Electrical engineers",
+					"Accountants",
+					"IT data analysts",
+					"Engineering managers",
+					"Surveyors",
+					"Secondary school teachers",
+					"Psychologists",
+					"Sales executives",
+					"Database and network professionals"
+				],
+				"range": [
+					"#2541B2",
+					"#3F52E3",
+					"#7692E4",
+					"#93ABD3",
+					"#B7657B",
+					"#A799B7",
+					"#AC66CC",
+					"#C689C6",
+					"#FFD372",
+					"#FE7E6D",
+					"#FFAB76",
+					"#FFCCB3",
+					"#E5CB9F",
+					"#85C88A",
+					"#357C3C"
+				]
+			}
+		},
+		"tooltip": [
+			{ "field": "Occupation", "type": "nominal", "title": "Occupation" },
+			{
+				"field": "Count",
+				"type": "quantitative",
+				"title": "Number of Countries"
+			}
+		]
+	},
+	"layer": [
+		{ "mark": { "type": "arc", "outerRadius": 300, "innerRadius": 200 } },
+		{
+			"mark": {
+				"type": "text",
+				"radius": 350,
+				"fontStyle": "bold",
+				"font": "Verdana"
+			},
+			"encoding": {
+				"text": { "field": "Occupation", "type": "nominal" },
+				"fillOpacity": {
+					"condition": {
+						"test": "datum['Count'] == 24 || datum['Count'] == 19  || datum['Count'] == 18",
+						"value": 1
+					},
+					"value": 0
+				},
+				"color": { "value": "black" }
+			}
+		},
+
+		{
+			"mark": {
+				"type": "text",
+				"fontSize": 22,
+				"fontStyle": "bold",
+				"color": "black",
+				"font": "Verdana"
+			},
+			"encoding": {
+				"text": { "field": "Sector", "type": "nominal" },
+				"color": { "value": "black" }
+			}
+		}
+	],
+	"config": {
+		"view": { "stroke": null },
+		"background": "#F6F6F6",
+		"legend": { "labelFontSize": 10, "labelLimit": 180 }
+	}
+}
