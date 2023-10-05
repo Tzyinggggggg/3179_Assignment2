@@ -80,7 +80,7 @@ Moldova,5.47,Europe
 Honduras,5.39,North America
 India,5.36,Asia
 Luxembourg,5.36,Europe
-Australia,5.27,Australia
+Australia,5.27,Oceania
 Eritrea,5.14,Africa
 Estonia,5.11,Europe
 Zimbabwe,4.95,Africa
@@ -96,7 +96,7 @@ Switzerland,4.58,Europe
 East Timor,4.55,Asia
 Pakistan,4.45,Asia
 Sierra Leone,4.43,Africa
-Vanuatu,4.39,Australia
+Vanuatu,4.39,Oceania
 Bulgaria,4.34,Europe
 Ghana,4.33,Africa
 People's Republic of China,4.32,Asia
@@ -108,8 +108,8 @@ Bangladesh,4.19,Asia
 South Korea,4.15,Asia
 El Salvador,4.11,North America
 Singapore,4.11,Asia
-Fiji,4.10,Australia
-New Zealand,4.07,Australia
+Fiji,4.10,Oceania
+New Zealand,4.07,Oceania
 Romania,3.98,Europe
 Ecuador,3.97,South America
 Turkmenistan,3.91,Asia
@@ -136,7 +136,7 @@ Trinidad and Tobago,2.69,North America
 Oman,2.67,Asia
 Kenya,2.64,Africa
 Guinea-Bissau,2.47,Africa
-Papua New Guinea,2.46,Australia
+Papua New Guinea,2.46,Oceania
 United Arab Emirates,2.35,Asia
 Bhutan,2.34,Asia
 Japan,2.29,Asia
@@ -159,6 +159,6 @@ Rwanda,1.03,Africa
 Thailand,0.75,Asia
 Cambodia,0.68,Asia
 Laos,0.63,Asia
-Solomon Islands,0.58,Australia
+Solomon Islands,0.58,Oceania
 Niger,0.47,Africa
 Qatar,0.09,Asia
