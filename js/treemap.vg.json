@@ -1,0 +1,152 @@
+{
+	"$schema": "https://vega.github.io/schema/vega/v5.json",
+	"title": { "text": "Unemployment Rate", "fontSize": 14, "font": "Verdana" },
+	"width": 600,
+	"height": 600,
+	"padding": 5,
+
+	"signals": [
+		{
+			"name": "method",
+			"value": "squarify"
+		},
+		{
+			"name": "ratio",
+			"value": 1.6108
+		}
+	],
+
+	"data": [
+		{
+			"name": "gapminder",
+			"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/UnemploymentRate.csv",
+			"format": { "type": "csv" },
+			"transform": [
+				{ "type": "nest", "keys": ["Continent", "Country"] },
+				{
+					"type": "treemap",
+					"field": "Unemployment_Rate",
+					"method": { "signal": "method" },
+					"ratio": { "signal": "ratio" },
+					"paddingInner": 1,
+					"size": [{ "signal": "width" }, { "signal": "height" }]
+				}
+			]
+		},
+		{
+			"name": "nodes",
+			"source": "gapminder",
+			"transform": [{ "type": "filter", "expr": "datum.children" }]
+		},
+		{
+			"name": "leaves",
+			"source": "gapminder",
+			"transform": [{ "type": "filter", "expr": "!datum.children" }]
+		}
+	],
+
+	"scales": [
+		{
+			"name": "color",
+			"type": "ordinal",
+			"domain": { "data": "gapminder", "field": "Continent" },
+			"range": [
+				"#2541B2",
+				"#3F52E3",
+				"#7692E4",
+				"#93ABD3",
+				"#B7657B",
+				"#A799B7",
+				"#AC66CC",
+				"#C689C6",
+				"#FFD372",
+				"#FE7E6D",
+				"#FFAB76",
+				"#FFCCB3",
+				"#E5CB9F",
+				"#85C88A",
+				"#357C3C"
+			]
+		},
+		{
+			"name": "size",
+			"type": "ordinal",
+			"domain": [0, 1, 2, 3],
+			"range": [256, 28, 20, 14]
+		},
+		{
+			"name": "opacity",
+			"type": "ordinal",
+			"domain": [0, 1, 2, 3],
+			"range": [0.15, 0.5, 0.8, 1.0]
+		}
+	],
+
+	"marks": [
+		{
+			"type": "rect",
+			"from": { "data": "gapminder" },
+			"encode": {
+				"update": {
+					"fill": { "scale": "color", "field": "Continent", "opacity": 0.7 },
+					"x": { "field": "x0" },
+					"x2": { "field": "x1" },
+					"y": { "field": "y0" },
+					"y2": { "field": "y1" },
+					"fillOpacity": { "value": 0.8 }
+				}
+			}
+		},
+		{
+			"type": "rect",
+			"from": { "data": "leaves" },
+			"encode": {
+				"enter": {
+					"stroke": { "value": "#fff" },
+					"strokeWidth": { "value": 0.2 }
+				},
+				"update": {
+					"x": { "field": "x0" },
+					"y": { "field": "y0" },
+					"x2": { "field": "x1" },
+					"y2": { "field": "y1" },
+					"fill": { "value": "transparent" },
+					"tooltip": {
+						"signal": "{\"Continent\": datum.Continent, \"Country\": datum.Country, \"Unemployment Rate(%)\":datum['Unemployment_Rate']}"
+					}
+				},
+				"hover": {
+					"fill": { "scale": "color", "field": "Continent", "fillOpacity": 1 }
+				}
+			}
+		},
+		{
+			"type": "text",
+			"from": { "data": "gapminder" },
+			"interactive": false,
+			"encode": {
+				"enter": {
+					"font": { "value": "Arial" },
+					"align": { "value": "center" },
+					"baseline": { "value": "top" },
+					"fill": { "value": "#000" },
+					"text": { "field": "Company" },
+					"fontSize": { "value": 10 },
+					"fontStyle": { "value": "bold" },
+					"fillOpacity": [
+						{
+							"test": "datum['Country'] == 'South Africa' || datum['Country'] == 'Bosnia and Herzegovina' || datum['Country'] == 'Jordan' || datum['Country'] == 'United States of America' || datum['Unemployment_rate'] > 24",
+							"value": 1
+						},
+						{ "value": 0 }
+					]
+				},
+				"update": {
+					"x": { "signal": "0.5 * (datum.x0 + datum.x1)" },
+					"y": { "signal": "0.5 * (datum.y0 + datum.y1)" }
+				}
+			}
+		}
+	],
+	"config": { "view": { "stroke": null }, "background": null }
+}
