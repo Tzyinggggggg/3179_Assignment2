@@ -105,7 +105,7 @@
 					"type": "quantitative",
 					"scale": {
 						"type": "threshold",
-						"domain": [1000, 3000, 9000, 15000, 20000, 25000],
+						"domain": [3000, 9000, 15000, 20000, 25000],
 						"range": [200, 400, 800, 1200, 1600, 2500]
 					},
 					"format": ",",
@@ -184,7 +184,7 @@
 				},
 				"opacity": {
 					"condition": {
-						"test": "datum.Country == 'Singapore' || datum.Country == 'Australia' || datum.Country == 'New Zealand' || datum.Country == 'Malaysia'",
+						"test": "datum.Country == 'Denmark' || datum.Country == 'Australia' || datum.Country == 'New Zealand' || datum.Country == 'Malaysia'||datum.Country == 'Luxembourg'||datum.Country == 'Mexico'||datum.Country == 'United Kingdom'",
 						"value": 1
 					},
 					"value": 0
