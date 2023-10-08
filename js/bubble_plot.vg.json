@@ -3,7 +3,7 @@
 	"height": 600,
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 	"description": "Average Salary of all Country 2022 in GPB",
-	"title": "Average Salary of all Country 2022 in GPB",
+	"title": "Which Country has the best Work Life Balance and Life Satisfaction?",
 	"data": {
 		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Salary-Satisfaction-WLB.csv"
 	},
