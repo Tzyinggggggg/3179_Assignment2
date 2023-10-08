@@ -2,7 +2,8 @@
 	"width": 900,
 	"height": 600,
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-	"description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
+	"description": "Average Salary of all Country 2022 in GPB",
+	"title": "Average Salary of all Country 2022 in GPB",
 	"data": {
 		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Salary-Satisfaction-WLB.csv"
 	},
