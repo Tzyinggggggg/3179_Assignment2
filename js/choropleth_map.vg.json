@@ -105,10 +105,7 @@
 					"type": "quantitative",
 					"scale": {
 						"type": "threshold",
-						"domain": [
-							5535548972, 14934159926, 66800800000, 234000000000, 482000000000,
-							1390000000000
-						],
+						"domain": [1000, 2000, 4000, 8000, 16000, 32000, 64000],
 						"range": [
 							"#a6d75b",
 							"#76c68f",
@@ -131,7 +128,11 @@
 						"type": "nominal",
 						"title": "Country"
 					},
-					{ "field": "GDP", "type": "quantitative" }
+					{
+						"field": "GDP",
+						"type": "quantitative",
+						"title": "GDP per capita (in US$)"
+					}
 				]
 			}
 		}
