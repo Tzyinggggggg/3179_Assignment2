@@ -27,18 +27,18 @@
 					"type": "quantitative",
 					"legend": null,
 					"scale": {
-						"range": ["#2f5aa6", "#3d8bbc", "#5ab4c2", "#90d0ba", "#cae9b4"]
+						"range": ["#cae9b4", "#90d0ba", "#5ab4c2", "#3d8bbc", "#2f5aa6"]
 					}
 				},
 				"y": {
 					"field": "Country",
 					"type": "nominal",
 					"axis": { "minExtent": 100, "title": null },
-					"sort": "-x"
+					"sort": "x"
 				},
 				"x": {
 					"field": "Total_tax_rate",
-					"aggregate": "max",
+					"aggregate": "min",
 					"scale": { "domain": [0, 100] },
 					"axis": { "orient": "top", "title": "Percentage" }
 				},
@@ -93,7 +93,7 @@
 				"y": {
 					"field": "Country",
 					"type": "nominal",
-					"sort": "-x",
+					"sort": "x",
 					"axis": null
 				},
 				"x": {

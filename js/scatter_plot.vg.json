@@ -1,9 +1,8 @@
 {
-	"width": 900,
-	"height": 600,
+	"width": 580,
+	"height": 500,
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 	"description": "Average Salary of all Country 2022 in GPB",
-	"title": "Which Country has the best Work Life Balance and Life Satisfaction?",
 	"data": {
 		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Salary-Satisfaction-WLB.csv"
 	},
@@ -71,8 +70,8 @@
 			"title": "Work Life Balance Index",
 			"axis": {
 				"tickCount": 6,
-				"labelFontSize": 15,
-				"titleFontSize": 20
+				"labelFontSize": 14,
+				"titleFontSize": 18
 			}
 		},
 		"y": {
@@ -85,8 +84,8 @@
 			"title": "Life Satisfaction Index",
 			"axis": {
 				"tickCount": 6,
-				"labelFontSize": 15,
-				"titleFontSize": 20
+				"labelFontSize": 14,
+				"titleFontSize": 18
 			}
 		}
 	},
@@ -107,14 +106,14 @@
 					"scale": {
 						"type": "threshold",
 						"domain": [3000, 9000, 15000, 20000, 25000],
-						"range": [200, 400, 800, 1200, 1600, 2500]
+						"range": [100, 200, 300, 400, 500, 600]
 					},
 					"format": ",",
 					"title": "Average Salary",
 					"legend": {
 						"format": ",.2s",
-						"labelFontSize": 15,
-						"titleFontSize": 20
+						"labelFontSize": 11,
+						"titleFontSize": 14
 					}
 				},
 				"color": {
@@ -123,8 +122,8 @@
 					"title": "Continent",
 					"legend": {
 						"title": "Continent",
-						"labelFontSize": 15,
-						"titleFontSize": 20
+						"labelFontSize": 11,
+						"titleFontSize": 14
 					}
 				},
 				"opacity": {
@@ -172,7 +171,7 @@
 				"align": "center",
 				"baseline": "middle",
 				"dy": 10,
-				"fontSize": 15,
+				"fontSize": 14,
 				"fontStyle": "bolder"
 			},
 			"encoding": {
@@ -185,7 +184,7 @@
 				},
 				"opacity": {
 					"condition": {
-						"test": "datum.Country == 'Denmark' || datum.Country == 'Australia' || datum.Country == 'New Zealand' || datum.Country == 'Malaysia'||datum.Country == 'Luxembourg'||datum.Country == 'Mexico'||datum.Country == 'United Kingdom'",
+						"test": "datum.Country == 'Denmark' || datum.Country == 'Australia' || datum.Country == 'Greece' || datum.Country == 'Malaysia'||datum.Country == 'Luxembourg'||datum.Country == 'Mexico'||datum.Country == 'United Kingdom'",
 						"value": 1
 					},
 					"value": 0
