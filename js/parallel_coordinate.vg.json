@@ -1,0 +1,233 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"background": "white",
+	"title": { "text": "Happiest Continent", "color": "black" },
+	"data": {
+		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Country_Happiness.csv",
+		"format": {
+			"type": "csv",
+			"parse": {
+				"Year": "number",
+				"Happiness_Score": "number",
+				"Healthy_Life_Expectancy": "number",
+				"Social_Support": "number",
+				"Freedom": "number",
+				"Corruption": "number"
+			}
+		}
+	},
+	"width": "container",
+	"height": 350,
+	"padding": { "top": 30, "bottom": 20 },
+	"transform": [
+		{ "filter": "datum['Happiness_Score']" },
+		{ "window": [{ "op": "count", "as": "index" }] },
+		{
+			"fold": [
+				"Happiness_Score",
+				"Healthy_Life_Expectancy",
+				"Social_Support",
+				"Freedom",
+				"Corruption"
+			]
+		},
+		{
+			"joinaggregate": [
+				{ "op": "min", "field": "value", "as": "min" },
+				{ "op": "max", "field": "value", "as": "max" }
+			],
+			"groupby": ["key"]
+		},
+		{
+			"calculate": "(datum.value - datum.min) / (datum.max-datum.min)",
+			"as": "norm_val"
+		},
+		{ "calculate": "(datum.min + datum.max) / 2", "as": "mid" }
+	],
+	"layer": [
+		{
+			"mark": { "type": "rule", "color": "#000000" },
+			"encoding": {
+				"detail": { "aggregate": "count" },
+				"x": { "field": "key" }
+			}
+		},
+		{
+			"mark": "line",
+			"params": [
+				{
+					"name": "Year",
+					"value": [{ "Year": 2022 }],
+					"select": { "type": "point", "fields": ["Year"] },
+					"bind": {
+						"name": "Year",
+						"input": "range",
+						"min": 2018,
+						"max": 2022,
+						"step": 1
+					}
+				},
+				{
+					"name": "hovered",
+					"select": {
+						"type": "point",
+						"fields": ["Region"],
+						"toggle": false,
+						"on": "mouseover"
+					}
+				},
+				{
+					"name": "clicked",
+					"select": { "type": "point", "fields": ["Region"] }
+				}
+			],
+			"transform": [{ "filter": { "param": "Year" } }],
+			"encoding": {
+				"color": {
+					"type": "nominal",
+					"field": "Region",
+					"scale": {
+						"domain": [
+							"Asia",
+							"Europe",
+							"North America",
+							"South America",
+							"Africa"
+						],
+						"range": ["#FF5733", "#0072B5", "#F4A582", "#AEB3B7", "#FFC30F"]
+					},
+					"legend": { "title": "Regions" }
+				},
+				"detail": { "type": "nominal", "field": "index" },
+				"opacity": {
+					"condition": {
+						"test": {
+							"or": [
+								{ "param": "hovered", "empty": true },
+								{ "param": "clicked", "empty": false }
+							]
+						},
+						"value": 0.6
+					},
+					"value": 0
+				},
+				"x": { "type": "nominal", "field": "key" },
+				"y": { "type": "quantitative", "field": "norm_val", "axis": null },
+
+				"tooltip": [
+					{ "type": "nominal", "field": "Region" },
+					{
+						"type": "quantitative",
+						"field": "Happiness_Score",
+						"format": ".2f"
+					},
+					{
+						"type": "quantitative",
+						"field": "Healthy_Life_Expectancy",
+						"format": ".2f"
+					},
+					{
+						"type": "quantitative",
+						"field": "Social_Support",
+						"format": ".2f"
+					},
+					{
+						"type": "quantitative",
+						"field": "Freedom",
+						"format": ".2f"
+					},
+					{
+						"type": "quantitative",
+						"field": "Corruption",
+						"format": ".2f"
+					}
+				]
+			}
+		},
+		{
+			"encoding": {
+				"x": { "type": "nominal", "field": "key" },
+				"y": { "value": 0 }
+			},
+			"layer": [
+				{
+					"mark": { "type": "text", "style": "label" },
+					"encoding": {
+						"text": { "aggregate": "max", "field": "max", "format": ".0f" }
+					}
+				},
+				{
+					"mark": {
+						"type": "tick",
+						"style": "tick",
+						"size": 8,
+						"color": "#000000"
+					}
+				}
+			]
+		},
+		{
+			"encoding": {
+				"x": { "type": "nominal", "field": "key" },
+				"y": { "value": 150 }
+			},
+			"layer": [
+				{
+					"mark": { "type": "text", "style": "label" },
+					"encoding": {
+						"text": { "aggregate": "min", "field": "mid", "format": ".0f" }
+					}
+				},
+				{
+					"mark": {
+						"type": "tick",
+						"style": "tick",
+						"size": 8,
+						"color": "#000000"
+					}
+				}
+			]
+		},
+		{
+			"encoding": {
+				"x": { "type": "nominal", "field": "key" },
+				"y": { "value": 300 }
+			},
+			"layer": [
+				{
+					"mark": { "type": "text", "style": "label" },
+					"encoding": {
+						"text": { "aggregate": "min", "field": "min", "format": ".0f" }
+					}
+				},
+				{
+					"mark": {
+						"type": "tick",
+						"style": "tick",
+						"size": 8,
+						"color": "#000000"
+					}
+				}
+			]
+		}
+	],
+	"config": {
+		"axisX": {
+			"domain": false,
+			"labelAngle": -90,
+			"tickColor": "#000000",
+			"title": null,
+			"labelColor": "#000000"
+		},
+		"view": { "stroke": "transparent" },
+		"style": {
+			"label": {
+				"baseline": "middle",
+				"align": "right",
+				"dx": -5,
+				"color": "#000000"
+			},
+			"tick": { "orient": "horizontal" }
+		}
+	}
+}
