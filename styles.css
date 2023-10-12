@@ -190,18 +190,18 @@ input[type="range"] {
 }
 
 a:link {
-	color: #d37a98;
+	color: white;
 	background-color: transparent;
 }
 a:visited {
-	color: #d37a98;
+	color: #eee5d0;
 	background-color: transparent;
 }
 a:hover {
-	color: #fec4c4;
+	color: white;
 	background-color: transparent;
 }
 a:active {
-	color: #d37a98;
+	color: white;
 	background-color: transparent;
 }
