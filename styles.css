@@ -88,39 +88,28 @@ body {
 #scatter_frame p {
 	margin-right: 300px;
 }
-#radial_frame {
-	background-color: #a0c5e0;
+#donut_frame {
+	background-color: #e8e4e0;
 	padding: 20px;
 }
-#radial_frame p {
+#donut_frame p {
 	margin-right: 290px;
 }
-#radial {
+#donut {
 	width: 100%;
 }
 #bar_frame {
-	background-color: #c6dded;
+	background-color: #e8e4e0;
 	margin-left: 30px;
 	padding: 20px;
 	padding-bottom: 47.5px;
 }
-#sankey_multiple {
-	font-size: 12px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-#sankey_frame {
-	background-color: #b1cde4;
+
+#tree_frame {
+	background-color: #e8e4e0;
 	padding: 20px;
 }
-#sankey_frame p {
-	margin-right: 300px;
-}
-#line_frame {
-	background-color: #cfe0f2;
-	padding: 20px;
-}
-#line_frame p {
+#tree_frame p {
 	margin-right: 340px;
 }
 #end_credit {

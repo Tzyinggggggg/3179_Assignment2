@@ -1,6 +1,6 @@
 {
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-	"width": 580,
+	"width": 400,
 	"height": 650,
 	"data": {
 		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Top15-In-DemandProfessionsDataset.csv"
@@ -99,11 +99,11 @@
 		]
 	},
 	"layer": [
-		{ "mark": { "type": "arc", "outerRadius": 300, "innerRadius": 200 } },
+		{ "mark": { "type": "arc", "outerRadius": 220, "innerRadius": 120 } },
 		{
 			"mark": {
 				"type": "text",
-				"radius": 350,
+				"radius": 280,
 				"fontStyle": "bold",
 				"font": "Verdana"
 			},

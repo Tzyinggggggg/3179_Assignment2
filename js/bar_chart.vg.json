@@ -34,7 +34,7 @@
 					"field": "Country",
 					"type": "nominal",
 					"axis": { "minExtent": 100, "title": null },
-					"sort": "x"
+					"sort": { "field": "Total_tax_rate", "order": "ascending" }
 				},
 				"x": {
 					"field": "Total_tax_rate",
@@ -98,7 +98,7 @@
 				},
 				"x": {
 					"field": "Total_tax_rate",
-					"aggregate": "max",
+					"aggregate": "min",
 					"axis": null
 				},
 				"color": {
