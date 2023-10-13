@@ -2,20 +2,20 @@
 	"width": 580,
 	"height": 500,
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-	"description": "Average Salary of all Country 2022 in GPB",
+	"description": "Average Count of all Country 2022 in GPB",
 	"data": {
-		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Salary-Satisfaction-WLB.csv"
+		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Count-Satisfaction-WLB.csv"
 	},
 	"params": [
 		{
-			"name": "Salary",
+			"name": "Count",
 			"value": 0,
 			"bind": {
 				"input": "range",
 				"min": 0,
 				"max": 37365,
 				"step": 500,
-				"name": "Salary Range: "
+				"name": "Count Range: "
 			}
 		},
 		{
@@ -56,7 +56,7 @@
 			"filter": "Continent_selection == null || datum.Continent == Continent_selection"
 		},
 		{
-			"filter": "datum.Average_Salary > Salary"
+			"filter": "datum.Average_Count > Count"
 		}
 	],
 	"encoding": {
@@ -101,7 +101,7 @@
 			"mark": { "type": "circle", "stroke": "black", "strokeWidth": 0.5 },
 			"encoding": {
 				"size": {
-					"field": "Average_Salary",
+					"field": "Average_Count",
 					"type": "quantitative",
 					"scale": {
 						"type": "log",
@@ -109,7 +109,7 @@
 						"range": [30, 50, 100, 250, 500, 1000]
 					},
 					"format": ",",
-					"title": "Average Salary",
+					"title": "Average Count",
 					"legend": {
 						"format": ",.2s",
 						"labelFontSize": 11,
@@ -148,10 +148,10 @@
 						"title": "Continent"
 					},
 					{
-						"field": "Average_Salary",
+						"field": "Average_Count",
 						"type": "quantitative",
 						"format": ",",
-						"title": "Average_Salary"
+						"title": "Average_Count"
 					},
 					{
 						"field": "Life_Satisfaction",

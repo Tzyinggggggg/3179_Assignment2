@@ -1,0 +1,1051 @@
+{
+	"$schema": "https://vega.github.io/schema/vega/v3.0.json",
+	"height": 600,
+	"width": 1400,
+	"data": [
+		{
+			"name": "rawData",
+			"values": [
+				{
+					"Country": "Germany",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 73538
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "Electronics Engineers",
+					"Count": 73678
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "Mechanical Engineers",
+					"Count": 68558
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "Nurses",
+					"Count": 54238
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 356390
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "Civil Engineers",
+					"Count": 78416
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "Electrical Engineers",
+					"Count": 63941
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "Accountants",
+					"Count": 72633
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "IT Data Analysts",
+					"Count": 60966
+				},
+				{
+					"Country": "Germany",
+					"Occupation": "Engineering Managers",
+					"Count": 115561
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 103257
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Electronics Engineers",
+					"Count": 71004
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Mechanical Engineers",
+					"Count": 82025
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Nurses",
+					"Count": 59838
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 155630
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Civil Engineers",
+					"Count": 78114
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Electrical Engineers",
+					"Count": 90884
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Accountants",
+					"Count": 63280
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "IT Data Analysts",
+					"Count": 70321
+				},
+				{
+					"Country": "Canada",
+					"Occupation": "Engineering Managers",
+					"Count": 159588
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 119007
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Electronics Engineers",
+					"Count": 100090
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Mechanical Engineers",
+					"Count": 89856
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Nurses",
+					"Count": 113228
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 233984
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Civil Engineers",
+					"Count": 111666
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Electrical Engineers",
+					"Count": 105308
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Accountants",
+					"Count": 62226
+				},
+				{
+					"Country": "United States",
+					"Occupation": "IT Data Analysts",
+					"Count": 77521
+				},
+				{
+					"Country": "United States",
+					"Occupation": "Engineering Managers",
+					"Count": 187915
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 83059
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Electronics Engineers",
+					"Count": 55372
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Mechanical Engineers",
+					"Count": 48766
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Nurses",
+					"Count": 49414
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 78967
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Civil Engineers",
+					"Count": 50316
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Electrical Engineers",
+					"Count": 52470
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Accountants",
+					"Count": 52603
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "IT Data Analysts",
+					"Count": 46405
+				},
+				{
+					"Country": "United Kingdom",
+					"Occupation": "Engineering Managers",
+					"Count": 100579
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 121850
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Electronics Engineers",
+					"Count": 85000
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Mechanical Engineers",
+					"Count": 100011
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Nurses",
+					"Count": 85000
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 180000
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Civil Engineers",
+					"Count": 91250
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Electrical Engineers",
+					"Count": 97000
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Accountants",
+					"Count": 89500
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "IT Data Analysts",
+					"Count": 96000
+				},
+				{
+					"Country": "Australia",
+					"Occupation": "Engineering Managers",
+					"Count": 194500
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 89000
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Electronics Engineers",
+					"Count": 85948
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Mechanical Engineers",
+					"Count": 85948
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Nurses",
+					"Count": 37084
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 80183
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Civil Engineers",
+					"Count": 77627
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Electrical Engineers",
+					"Count": 90079
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Accountants",
+					"Count": 47595
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "IT Data Analysts",
+					"Count": 47782
+				},
+				{
+					"Country": "Japan",
+					"Occupation": "Engineering Managers",
+					"Count": 96320
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 118000
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Electronics Engineers",
+					"Count": 102749
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Mechanical Engineers",
+					"Count": 92282
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Nurses",
+					"Count": 69552
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 138151
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Civil Engineers",
+					"Count": 95048
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Electrical Engineers",
+					"Count": 120000
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Accountants",
+					"Count": 107000
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "IT Data Analysts",
+					"Count": 92598
+				},
+				{
+					"Country": "Switzerland",
+					"Occupation": "Engineering Managers",
+					"Count": 138257
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 112737
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Electronics Engineers",
+					"Count": 85224
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Mechanical Engineers",
+					"Count": 67546
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Nurses",
+					"Count": 40436
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 92412
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Civil Engineers",
+					"Count": 51991
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Electrical Engineers",
+					"Count": 85224
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Accountants",
+					"Count": 68474
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "IT Data Analysts",
+					"Count": 64263
+				},
+				{
+					"Country": "Netherlands",
+					"Occupation": "Engineering Managers",
+					"Count": 131220
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 82692
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Electronics Engineers",
+					"Count": 50234
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Mechanical Engineers",
+					"Count": 68095
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Nurses",
+					"Count": 32519
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 56172
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Civil Engineers",
+					"Count": 90758
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Electrical Engineers",
+					"Count": 82308
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Accountants",
+					"Count": 77256
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "IT Data Analysts",
+					"Count": 66354
+				},
+				{
+					"Country": "Sweden",
+					"Occupation": "Engineering Managers",
+					"Count": 180408
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Software Engineers and Developers",
+					"Count": 92064
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Electronics Engineers",
+					"Count": 88039
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Mechanical Engineers",
+					"Count": 120581
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Nurses",
+					"Count": 30491
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Doctors and Medical Practitioners",
+					"Count": 109344
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Civil Engineers",
+					"Count": 42012
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Electrical Engineers",
+					"Count": 45000
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Accountants",
+					"Count": 43125
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "IT Data Analysts",
+					"Count": 61683
+				},
+				{
+					"Country": "Denmark",
+					"Occupation": "Engineering Managers",
+					"Count": 65000
+				}
+			],
+			"transform": [
+				{
+					"type": "formula",
+					"expr": "datum['Country']",
+					"as": "stk1"
+				},
+				{
+					"type": "formula",
+					"expr": "datum.Occupation",
+					"as": "stk2"
+				},
+				{
+					"type": "formula",
+					"expr": "datum.Count",
+					"as": "size"
+				}
+			]
+		},
+		{
+			"name": "nodes",
+			"source": "rawData",
+			"transform": [
+				{
+					"type": "filter",
+					"expr": "!groupSelector || groupSelector.stk1 == datum.stk1 || groupSelector.stk2 == datum.stk2"
+				},
+				{
+					"type": "formula",
+					"expr": "datum.stk1+datum.stk2",
+					"as": "key"
+				},
+				{
+					"type": "fold",
+					"fields": ["stk1", "stk2"],
+					"as": ["stack", "grpId"]
+				},
+				{
+					"type": "formula",
+					"expr": "datum.stack == 'stk1' ? datum.stk1+' '+datum.stk2 : datum.stk2+' '+datum.stk1",
+					"as": "sortField"
+				},
+				{
+					"type": "stack",
+					"groupby": ["stack"],
+					"sort": {
+						"field": "sortField",
+						"order": "descending"
+					},
+					"field": "size"
+				},
+				{
+					"type": "formula",
+					"expr": "(datum.y0+datum.y1)/2",
+					"as": "yc"
+				}
+			]
+		},
+		{
+			"name": "groups",
+			"source": "nodes",
+			"transform": [
+				{
+					"type": "aggregate",
+					"groupby": ["stack", "grpId"],
+					"fields": ["size"],
+					"ops": ["sum"],
+					"as": ["total"]
+				},
+				{
+					"type": "stack",
+					"groupby": ["stack"],
+					"sort": {
+						"field": "grpId",
+						"order": "descending"
+					},
+					"field": "total"
+				},
+				{
+					"type": "formula",
+					"expr": "scale('y', datum.y0)",
+					"as": "scaledY0"
+				},
+				{
+					"type": "formula",
+					"expr": "scale('y', datum.y1)",
+					"as": "scaledY1"
+				},
+				{
+					"type": "formula",
+					"expr": "datum.stack == 'stk1'",
+					"as": "rightLabel"
+				},
+				{
+					"type": "formula",
+					"expr": "datum.total/domain('y')[1]",
+					"as": "percentage"
+				}
+			]
+		},
+		{
+			"name": "destinationNodes",
+			"source": "nodes",
+			"transform": [
+				{
+					"type": "filter",
+					"expr": "datum.stack == 'stk2'"
+				}
+			]
+		},
+		{
+			"name": "edges",
+			"source": "nodes",
+			"transform": [
+				{
+					"type": "filter",
+					"expr": "datum.stack == 'stk1'"
+				},
+				{
+					"type": "lookup",
+					"from": "destinationNodes",
+					"key": "key",
+					"fields": ["key"],
+					"as": ["target"]
+				},
+				{
+					"type": "linkpath",
+					"orient": "horizontal",
+					"shape": "diagonal",
+					"sourceY": {
+						"expr": "scale('y', datum.yc)"
+					},
+					"sourceX": {
+						"expr": "scale('x', 'stk1') + bandwidth('x')"
+					},
+					"targetY": {
+						"expr": "scale('y', datum.target.yc)"
+					},
+					"targetX": {
+						"expr": "scale('x', 'stk2')"
+					}
+				},
+				{
+					"type": "formula",
+					"expr": "range('y')[0]-scale('y', datum.size)",
+					"as": "strokeWidth"
+				},
+				{
+					"type": "formula",
+					"expr": "datum.size/domain('y')[1]",
+					"as": "percentage"
+				}
+			]
+		}
+	],
+	"scales": [
+		{
+			"name": "x",
+			"type": "band",
+			"range": "width",
+			"domain": ["stk1", "stk2"],
+			"paddingOuter": 0.05,
+			"paddingInner": 0.95
+		},
+		{
+			"name": "y",
+			"type": "linear",
+			"range": "height",
+			"domain": {
+				"data": "nodes",
+				"field": "y1"
+			}
+		},
+		{
+			"name": "color",
+			"type": "ordinal",
+			"range": [
+				"#417D7A",
+				"#91C483",
+				"#FFB085",
+				"#DF7861",
+				"#9C3D54",
+				"#FF96AD",
+				"#E15FED",
+				"#90AACB",
+				"#005A8D",
+				"#556FB5",
+				"#2541B2",
+				"#3F52E3",
+				"#7692E4",
+				"#93ABD3",
+				"#B7657B",
+				"#A799B7",
+				"#AC66CC",
+				"#C689C6",
+				"#FFD372",
+				"#FE7E6D"
+			],
+			"domain": [
+				"Germany",
+				"Canada",
+				"United States",
+				"United Kingdom",
+				"Australia",
+				"Japan",
+				"Switzerland",
+				"Netherlands",
+				"Sweden",
+				"Denmark",
+				"Software Engineers and Developers",
+				"Electronics Engineers",
+				"Mechanical Engineers",
+				"Nurses",
+				"Doctors and Medical Practitioners",
+				"Civil Engineers",
+				"Electrical Engineers",
+				"Accountants",
+				"IT Data Analysts",
+				"Engineering Managers"
+			]
+		},
+		{
+			"name": "stackNames",
+			"type": "ordinal",
+			"range": ["Country", "Occupation"],
+			"domain": ["stk1", "stk2"]
+		}
+	],
+	"axes": [
+		{
+			"orient": "bottom",
+			"scale": "x",
+			"domain": false,
+			"ticks": false,
+			"labelPadding": 20,
+			"encode": {
+				"labels": {
+					"update": {
+						"text": {
+							"scale": "stackNames",
+							"field": "value",
+							"fontWeight": "bold",
+							"fontSize": 14
+						}
+					}
+				}
+			}
+		},
+		{
+			"orient": "top",
+			"scale": "x",
+			"domain": false,
+			"ticks": false,
+			"labelPadding": 20,
+			"encode": {
+				"labels": {
+					"update": {
+						"text": {
+							"scale": "stackNames",
+							"field": "value",
+							"fontWeight": "bold",
+							"fontSize": 14
+						}
+					}
+				}
+			}
+		},
+		{
+			"orient": "left",
+			"scale": "y",
+			"labels": false,
+			"domain": false,
+			"ticks": false
+		}
+	],
+	"marks": [
+		{
+			"type": "path",
+			"name": "edgeMark",
+			"from": {
+				"data": "edges"
+			},
+			"clip": true,
+			"encode": {
+				"update": {
+					"stroke": [
+						{
+							"test": "groupSelector && groupSelector.stack=='stk1'",
+							"scale": "color",
+							"field": "stk2"
+						},
+						{
+							"scale": "color",
+							"field": "stk1"
+						}
+					],
+					"strokeWidth": {
+						"field": "strokeWidth"
+					},
+					"path": {
+						"field": "path"
+					},
+					"strokeOpacity": {
+						"signal": "!groupSelector && (groupHover.stk1 == datum.stk1 || groupHover.stk2 == datum.stk2) ? 0.9 : 0.3"
+					},
+					"zindex": {
+						"signal": "!groupSelector && (groupHover.stk1 == datum.stk1 || groupHover.stk2 == datum.stk2) ? 1 : 0"
+					},
+					"tooltip": {
+						"signal": "{\"Country\": datum.stk1, \"Occupation\": datum.stk2, \"Average Salary\":format(datum.size, ',.0f')}"
+					}
+				},
+				"hover": {
+					"strokeOpacity": {
+						"value": 1
+					}
+				}
+			}
+		},
+		{
+			"type": "rect",
+			"name": "groupMark",
+			"from": {
+				"data": "groups"
+			},
+			"encode": {
+				"enter": {
+					"fill": {
+						"scale": "color",
+						"field": "grpId"
+					},
+					"width": {
+						"scale": "x",
+						"band": 1
+					}
+				},
+				"update": {
+					"x": {
+						"scale": "x",
+						"field": "stack"
+					},
+					"y": {
+						"field": "scaledY0"
+					},
+					"y2": {
+						"field": "scaledY1"
+					},
+					"fillOpacity": {
+						"value": 0.8
+					},
+					"tooltip": {
+						"signal": "datum.grpId + ' has average salary of ' + format(datum.total/11, ',.0f')"
+					}
+				},
+				"hover": {
+					"fillOpacity": {
+						"value": 1
+					}
+				}
+			}
+		},
+		{
+			"type": "text",
+			"from": {
+				"data": "groups"
+			},
+			"interactive": false,
+			"encode": {
+				"update": {
+					"x": {
+						"signal": "scale('x', datum.stack) + (datum.rightLabel ? bandwidth('x') + 8 : -8)"
+					},
+					"yc": {
+						"signal": "(datum.scaledY0 + datum.scaledY1)/2"
+					},
+					"align": {
+						"signal": "datum.rightLabel ? 'left' : 'right'"
+					},
+					"baseline": {
+						"value": "middle"
+					},
+					"fontWeight": {
+						"value": "bold"
+					},
+					"text": {
+						"signal": "abs(datum.scaledY0-datum.scaledY1) > 13 ? datum.grpId : ''"
+					}
+				}
+			}
+		},
+		{
+			"type": "group",
+			"data": [
+				{
+					"name": "dataForShowAll",
+					"values": [{}],
+					"transform": [
+						{
+							"type": "filter",
+							"expr": "groupSelector"
+						}
+					]
+				}
+			],
+			"encode": {
+				"enter": {
+					"xc": {
+						"signal": "width/2"
+					},
+					"y": {
+						"value": 30
+					},
+					"width": {
+						"value": 80
+					},
+					"height": {
+						"value": 30
+					}
+				}
+			},
+			"marks": [
+				{
+					"type": "group",
+					"name": "groupReset",
+					"from": {
+						"data": "dataForShowAll"
+					},
+					"encode": {
+						"enter": {
+							"cornerRadius": {
+								"value": 6
+							},
+							"fill": {
+								"value": "#f5f5f5"
+							},
+							"stroke": {
+								"value": "#c1c1c1"
+							},
+							"strokeWidth": {
+								"value": 2
+							},
+							"height": {
+								"field": {
+									"group": "height"
+								}
+							},
+							"width": {
+								"field": {
+									"group": "width"
+								}
+							}
+						},
+						"update": {
+							"opacity": {
+								"value": 1
+							}
+						},
+						"hover": {
+							"opacity": {
+								"value": 0.7
+							}
+						}
+					},
+					"marks": [
+						{
+							"type": "text",
+							"interactive": false,
+							"encode": {
+								"enter": {
+									"xc": {
+										"field": {
+											"group": "width"
+										},
+										"mult": 0.5
+									},
+									"yc": {
+										"field": {
+											"group": "height"
+										},
+										"mult": 0.5,
+										"offset": 2
+									},
+									"align": {
+										"value": "center"
+									},
+									"baseline": {
+										"value": "middle"
+									},
+									"fontWeight": {
+										"value": "bold"
+									},
+									"text": {
+										"value": "Show All"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"signals": [
+		{
+			"name": "groupHover",
+			"value": {},
+			"on": [
+				{
+					"events": "@groupMark:mouseover",
+					"update": "{stk1:datum.stack=='stk1' && datum.grpId, stk2:datum.stack=='stk2' && datum.grpId}"
+				},
+				{
+					"events": "mouseout",
+					"update": "{}"
+				}
+			]
+		},
+		{
+			"name": "groupSelector",
+			"value": false,
+			"on": [
+				{
+					"events": "@groupMark:click!",
+					"update": "{stack:datum.stack, stk1:datum.stack=='stk1' && datum.grpId, stk2:datum.stack=='stk2' && datum.grpId}"
+				},
+
+				{
+					"events": [
+						{
+							"type": "click",
+							"markname": "groupReset"
+						},
+						{
+							"type": "dblclick"
+						}
+					],
+					"update": "false"
+				}
+			]
+		}
+	],
+	"config": { "view": { "stroke": null }, "background": null }
+}
