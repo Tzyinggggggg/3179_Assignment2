@@ -239,7 +239,7 @@
 		"id": 36,
 		"name": "Uruguay",
 		"parent": 7,
-		"size": 42,
+		"size": 41.8,
 		"color": 6
 	},
 	{
@@ -253,14 +253,14 @@
 		"id": 38,
 		"name": "Argentina",
 		"parent": 7,
-		"size": 106,
+		"size": 106.3,
 		"color": 6
 	},
 	{
 		"id": 39,
 		"name": "Brazil",
 		"parent": 7,
-		"size": 65,
+		"size": 65.1,
 		"color": 6
 	}
 ]
