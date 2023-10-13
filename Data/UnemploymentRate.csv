@@ -1,164 +1,164 @@
-Country,Unemployment_Rate,Continent
-South Africa,28.18,Africa
-Lesotho,23.41,Africa
-Namibia,20.27,Africa
-Gabon,20.00,Africa
-Libya,18.56,Africa
-Bosnia and Herzegovina,18.42,Europe
-Botswana,18.19,Africa
-Greece,17.24,Europe
-Armenia,16.99,Europe
-Sudan,16.53,Africa
-Tunisia,16.02,Africa
-Montenegro,14.88,Europe
-Jordan,14.72,Asia
-United States of America,14.70,North America
-Georgia,14.40,Europe
-Spain,13.96,Europe
-Haiti,13.78,North America
-Turkey,13.49,Asia
-Yemen,12.91,Asia
-Iraq,12.82,Asia
-Serbia,12.69,Europe
-Albania,12.33,Europe
-South Sudan,12.24,Africa
-Brazil,12.08,South America
-Costa Rica,11.85,North America
-Guyana,11.85,South America
-Algeria,11.70,Africa
-Zambia,11.43,Africa
-Iran,11.38,Asia
-Somalia,11.35,Africa
-Afghanistan,11.12,Asia
-Tajikistan,11.02,Asia
-Egypt,10.76,Africa
-The Bahamas,10.36,North America
-Djibouti,10.30,Africa
-Italy,9.89,Europe
-Argentina,9.79,South America
-Colombia,9.71,South America
-Mauritania,9.55,Africa
-Republic of the Congo,9.47,Africa
-Brunei,9.12,Asia
-The Gambia,9.06,Africa
-Morocco,9.02,Africa
-Ukraine,8.88,Europe
-Venezuela,8.80,South America
-Uruguay,8.73,South America
-France,8.43,Europe
-Syria,8.37,Asia
-Nigeria,8.10,Africa
-Jamaica,8.00,Africa
-Suriname,7.33,South America
-Cyprus,7.27,Europe
-Chile,7.09,South America
-Croatia,6.93,Europe
-Angola,6.89,Africa
-Nicaragua,6.84,North America
-Senegal,6.60,Africa
-Finland,6.59,Europe
-Latvia,6.52,Europe
-Sweden,6.48,Europe
-Equatorial Guinea,6.43,Africa
-Belize,6.41,North America
-Lithuania,6.35,Europe
-Kyrgyzstan,6.33,Asia
-Portugal,6.33,Europe
-Burkina Faso,6.26,Africa
-Lebanon,6.23,Asia
-Maldives,6.14,Asia
-Mongolia,6.01,Asia
-Saudi Arabia,5.93,Asia
-Uzbekistan,5.92,Asia
-Dominican Republic,5.84,North America
-Malawi,5.65,Africa
-Belgium,5.59,Europe
-Canada,5.56,North America
-Slovakia,5.56,Europe
-Azerbaijan,5.51,Europe
-Moldova,5.47,Europe
-Honduras,5.39,North America
-India,5.36,Asia
-Luxembourg,5.36,Europe
-Australia,5.27,Oceania
-Eritrea,5.14,Africa
-Estonia,5.11,Europe
-Zimbabwe,4.95,Africa
-Ireland,4.93,Europe
-Denmark,4.91,Europe
-Paraguay,4.81,South America
-Indonesia,4.69,Asia
-Austria,4.67,Europe
-Belarus,4.59,Europe
-Kazakhstan,4.59,Asia
-Russia,4.59,Europe
-Switzerland,4.58,Europe
-East Timor,4.55,Asia
-Pakistan,4.45,Asia
-Sierra Leone,4.43,Africa
-Vanuatu,4.39,Oceania
-Bulgaria,4.34,Europe
-Ghana,4.33,Africa
-People's Republic of China,4.32,Asia
-Guinea,4.30,Africa
-Democratic Republic of the Congo,4.24,Africa
-Slovenia,4.20,Europe
-Sri Lanka,4.20,Asia
-Bangladesh,4.19,Asia
-South Korea,4.15,Asia
-El Salvador,4.11,North America
-Singapore,4.11,Asia
-Fiji,4.10,Oceania
-New Zealand,4.07,Oceania
-Romania,3.98,Europe
-Ecuador,3.97,South America
-Turkmenistan,3.91,Asia
-Panama,3.90,North America
-Israel,3.86,Asia
-United Kingdom,3.85,Europe
-Central African Republic,3.68,Africa
-Bolivia,3.50,South America
-Poland,3.47,Europe
-Mexico,3.42,North America
-Hungary,3.40,Europe
-Cameroon,3.38,Africa
-Norway,3.35,Europe
-Ivory Coast,3.32,Africa
-Malaysia,3.32,Asia
-Peru,3.31,South America
-Mozambique,3.24,Africa
-Netherlands,3.20,Europe
-Germany,3.04,Europe
-Iceland,2.84,Europe
-Liberia,2.81,Africa
-North Korea,2.74,Asia
-Trinidad and Tobago,2.69,North America
-Oman,2.67,Asia
-Kenya,2.64,Africa
-Guinea-Bissau,2.47,Africa
-Papua New Guinea,2.46,Oceania
-United Arab Emirates,2.35,Asia
-Bhutan,2.34,Asia
-Japan,2.29,Asia
-Benin,2.23,Africa
-Kuwait,2.18,Asia
-Philippines,2.15,Asia
-Ethiopia,2.08,Africa
-Togo,2.04,Africa
-Vietnam,2.01,Asia
-Tanzania,1.98,Africa
-Czech Republic,1.93,Europe
-Chad,1.89,Africa
-Uganda,1.84,Africa
-Madagascar,1.76,Africa
-Cuba,1.64,North America
-Myanmar,1.58,Asia
-Burundi,1.43,Africa
-Nepal,1.41,Asia
-Rwanda,1.03,Africa
-Thailand,0.75,Asia
-Cambodia,0.68,Asia
-Laos,0.63,Asia
-Solomon Islands,0.58,Oceania
-Niger,0.47,Africa
-Qatar,0.09,Asia
+Country,Employment_Rate,Continent
+South Africa,71.82,Africa
+Lesotho,76.59,Africa
+Namibia,79.73,Africa
+Gabon,80,Africa
+Libya,81.44,Africa
+Bosnia and Herzegovina,81.58,Europe
+Botswana,81.81,Africa
+Greece,82.76,Europe
+Armenia,83.01,Europe
+Sudan,83.47,Africa
+Tunisia,83.98,Africa
+Montenegro,85.12,Europe
+Jordan,85.28,Asia
+United States of America,85.3,North America
+Georgia,85.6,Europe
+Spain,86.04,Europe
+Haiti,86.22,North America
+Turkey,86.51,Asia
+Yemen,87.09,Asia
+Iraq,87.18,Asia
+Serbia,87.31,Europe
+Albania,87.67,Europe
+South Sudan,87.76,Africa
+Brazil,87.92,South America
+Costa Rica,88.15,North America
+Guyana,88.15,South America
+Algeria,88.3,Africa
+Zambia,88.57,Africa
+Iran,88.62,Asia
+Somalia,88.65,Africa
+Afghanistan,88.88,Asia
+Tajikistan,88.98,Asia
+Egypt,89.24,Africa
+The Bahamas,89.64,North America
+Djibouti,89.7,Africa
+Italy,90.11,Europe
+Argentina,90.21,South America
+Colombia,90.29,South America
+Mauritania,90.45,Africa
+Republic of the Congo,90.53,Africa
+Brunei,90.88,Asia
+The Gambia,90.94,Africa
+Morocco,90.98,Africa
+Ukraine,91.12,Europe
+Venezuela,91.2,South America
+Uruguay,91.27,South America
+France,91.57,Europe
+Syria,91.63,Asia
+Nigeria,91.9,Africa
+Jamaica,92,Africa
+Suriname,92.67,South America
+Cyprus,92.73,Europe
+Chile,92.91,South America
+Croatia,93.07,Europe
+Angola,93.11,Africa
+Nicaragua,93.16,North America
+Senegal,93.4,Africa
+Finland,93.41,Europe
+Latvia,93.48,Europe
+Sweden,93.52,Europe
+Equatorial Guinea,93.57,Africa
+Belize,93.59,North America
+Lithuania,93.65,Europe
+Kyrgyzstan,93.67,Asia
+Portugal,93.67,Europe
+Burkina Faso,93.74,Africa
+Lebanon,93.77,Asia
+Maldives,93.86,Asia
+Mongolia,93.99,Asia
+Saudi Arabia,94.07,Asia
+Uzbekistan,94.08,Asia
+Dominican Republic,94.16,North America
+Malawi,94.35,Africa
+Belgium,94.41,Europe
+Canada,94.44,North America
+Slovakia,94.44,Europe
+Azerbaijan,94.49,Europe
+Moldova,94.53,Europe
+Honduras,94.61,North America
+India,94.64,Asia
+Luxembourg,94.64,Europe
+Australia,94.73,Oceania
+Eritrea,94.86,Africa
+Estonia,94.89,Europe
+Zimbabwe,95.05,Africa
+Ireland,95.07,Europe
+Denmark,95.09,Europe
+Paraguay,95.19,South America
+Indonesia,95.31,Asia
+Austria,95.33,Europe
+Belarus,95.41,Europe
+Kazakhstan,95.41,Asia
+Russia,95.41,Europe
+Switzerland,95.42,Europe
+East Timor,95.45,Asia
+Pakistan,95.55,Asia
+Sierra Leone,95.57,Africa
+Vanuatu,95.61,Oceania
+Bulgaria,95.66,Europe
+Ghana,95.67,Africa
+People's Republic of China,95.68,Asia
+Guinea,95.7,Africa
+Democratic Republic of the Congo,95.76,Africa
+Slovenia,95.8,Europe
+Sri Lanka,95.8,Asia
+Bangladesh,95.81,Asia
+South Korea,95.85,Asia
+El Salvador,95.89,North America
+Singapore,95.89,Asia
+Fiji,95.9,Oceania
+New Zealand,95.93,Oceania
+Romania,96.02,Europe
+Ecuador,96.03,South America
+Turkmenistan,96.09,Asia
+Panama,96.1,North America
+Israel,96.14,Asia
+United Kingdom,96.15,Europe
+Central African Republic,96.32,Africa
+Bolivia,96.5,South America
+Poland,96.53,Europe
+Mexico,96.58,North America
+Hungary,96.6,Europe
+Cameroon,96.62,Africa
+Norway,96.65,Europe
+Ivory Coast,96.68,Africa
+Malaysia,96.68,Asia
+Peru,96.69,South America
+Mozambique,96.76,Africa
+Netherlands,96.8,Europe
+Germany,96.96,Europe
+Iceland,97.16,Europe
+Liberia,97.19,Africa
+North Korea,97.26,Asia
+Trinidad and Tobago,97.31,North America
+Oman,97.33,Asia
+Kenya,97.36,Africa
+Guinea-Bissau,97.53,Africa
+Papua New Guinea,97.54,Oceania
+United Arab Emirates,97.65,Asia
+Bhutan,97.66,Asia
+Japan,97.71,Asia
+Benin,97.77,Africa
+Kuwait,97.82,Asia
+Philippines,97.85,Asia
+Ethiopia,97.92,Africa
+Togo,97.96,Africa
+Vietnam,97.99,Asia
+Tanzania,98.02,Africa
+Czech Republic,98.07,Europe
+Chad,98.11,Africa
+Uganda,98.16,Africa
+Madagascar,98.24,Africa
+Cuba,98.36,North America
+Myanmar,98.42,Asia
+Burundi,98.57,Africa
+Nepal,98.59,Asia
+Rwanda,98.97,Africa
+Thailand,99.25,Asia
+Cambodia,99.32,Asia
+Laos,99.37,Asia
+Solomon Islands,99.42,Oceania
+Niger,99.53,Africa
+Qatar,99.91,Asia
