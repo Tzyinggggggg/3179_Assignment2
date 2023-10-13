@@ -1,6 +1,6 @@
 {
 	"$schema": "https://vega.github.io/schema/vega/v5.json",
-	"title": { "text": "Unemployment Rate", "fontSize": 14, "font": "Verdana" },
+	"title": { "text": "Employment Rate", "fontSize": 14, "font": "Verdana" },
 	"width": 600,
 	"height": 600,
 	"padding": 5,
@@ -19,13 +19,13 @@
 	"data": [
 		{
 			"name": "gapminder",
-			"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/UnemploymentRate.csv",
+			"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Employment_Rate.csv",
 			"format": { "type": "csv" },
 			"transform": [
 				{ "type": "nest", "keys": ["Continent", "Country"] },
 				{
 					"type": "treemap",
-					"field": "Unemployment_Rate",
+					"field": "Employment_Rate",
 					"method": { "signal": "method" },
 					"ratio": { "signal": "ratio" },
 					"paddingInner": 1,
@@ -112,7 +112,7 @@
 					"y2": { "field": "y1" },
 					"fill": { "value": "transparent" },
 					"tooltip": {
-						"signal": "{\"Continent\": datum.Continent, \"Country\": datum.Country, \"Unemployment Rate(%)\":datum['Unemployment_Rate']}"
+						"signal": "{\"Continent\": datum.Continent, \"Country\": datum.Country, \"Employment Rate(%)\":datum['Employment_Rate']}"
 					}
 				},
 				"hover": {
@@ -130,21 +130,52 @@
 					"align": { "value": "center" },
 					"baseline": { "value": "top" },
 					"fill": { "value": "#000" },
-					"text": { "field": "Company" },
+					"text": { "field": "Country" },
 					"fontSize": { "value": 10 },
 					"fontStyle": { "value": "bold" },
 					"fillOpacity": [
 						{
-							"test": "datum['Country'] == 'South Africa' || datum['Country'] == 'Bosnia and Herzegovina' || datum['Country'] == 'Jordan' || datum['Country'] == 'United States of America' || datum['Unemployment_rate'] > 24",
+							"test": "datum['Country']",
 							"value": 1
 						},
 						{ "value": 0 }
-					]
+					],
+					"lineBreak": [
+						{
+							"test": "datum.Country == 'United Arab Emirates'",
+							"value": " "
+						},
+						{
+							"test": "datum.Country == 'South Africa'",
+							"value": " "
+						},
+						{
+							"test": "datum.Country == 'United States of America'",
+							"value": " "
+						},
+						{
+							"test": "datum.Country == 'Trinidad and Tobago'",
+							"value": " "
+						},
+						{ "value": "" }
+					],
+					"clip": { "value": true }
 				},
 				"update": {
 					"x": { "signal": "0.5 * (datum.x0 + datum.x1)" },
 					"y": { "signal": "0.5 * (datum.y0 + datum.y1)" }
 				}
+			}
+		}
+	],
+	"legends": [
+		{
+			"fill": "color",
+			"title": "Continent",
+			"orient": "right",
+			"encode": {
+				"symbols": { "enter": { "fillOpacity": { "value": 0.5 } } },
+				"labels": { "update": { "text": { "field": "value" } } }
 			}
 		}
 	],
