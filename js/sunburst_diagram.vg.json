@@ -31,7 +31,14 @@
 			"name": "color",
 			"type": "ordinal",
 			"domain": { "data": "tree", "field": "color" },
-			"range": { "scheme": "set3" }
+			"range": [
+				"#7ac3dc",
+				"#f6d988",
+				"#efa775",
+				"#f3afa9",
+				"#ab829f",
+				"#9a78b0"
+			]
 		}
 	],
 

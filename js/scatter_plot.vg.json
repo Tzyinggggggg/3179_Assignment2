@@ -4,7 +4,7 @@
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 	"description": "Average Count of all Country 2022 in GPB",
 	"data": {
-		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Count-Satisfaction-WLB.csv"
+		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Salary-Satisfaction-WLB.csv"
 	},
 	"params": [
 		{
@@ -98,7 +98,7 @@
 					"bind": "legend"
 				}
 			},
-			"mark": { "type": "circle", "stroke": "black", "strokeWidth": 0.5 },
+			"mark": { "type": "circle" },
 			"encoding": {
 				"size": {
 					"field": "Average_Count",
@@ -121,7 +121,7 @@
 					"type": "nominal",
 					"title": "Continent",
 					"scale": {
-						"range": ["#4c78a8", "#f58518", "#b278a2", "#e55756", "#9e765f"]
+						"range": ["#99bda4", "#f09b93", "#9a78b0", "#f6d988", "#7ac3dc"]
 					},
 					"legend": {
 						"title": "Continent",
@@ -132,7 +132,7 @@
 				"opacity": {
 					"condition": {
 						"selection": "continent_highlight",
-						"value": 1
+						"value": 0.8
 					},
 					"value": 0.1
 				},
@@ -187,7 +187,7 @@
 				},
 				"opacity": {
 					"condition": {
-						"test": "datum.Country == 'Denmark' || datum.Country == 'Australia' || datum.Country == 'Greece' || datum.Country == 'Malaysia'||datum.Country == 'Luxembourg'||datum.Country == 'Mexico'||datum.Country == 'United Kingdom'",
+						"test": "datum.Country == 'Denmark' || datum.Country == 'Australia' || datum.Country == 'Greece' || datum.Country == 'Malaysia'||datum.Country == 'Luxembourg'||datum.Country == 'Mexico'||datum.Country == 'United Kingdom'||datum.Country == 'United Kingdom'",
 						"value": 1
 					},
 					"value": 0
