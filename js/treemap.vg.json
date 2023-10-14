@@ -51,21 +51,12 @@
 			"type": "ordinal",
 			"domain": { "data": "gapminder", "field": "Continent" },
 			"range": [
-				"#2541B2",
-				"#3F52E3",
-				"#7692E4",
-				"#93ABD3",
-				"#B7657B",
-				"#A799B7",
-				"#AC66CC",
-				"#C689C6",
-				"#FFD372",
-				"#FE7E6D",
-				"#FFAB76",
-				"#FFCCB3",
-				"#E5CB9F",
-				"#85C88A",
-				"#357C3C"
+				"#f3cf69",
+				"#ea9051",
+				"#f09b93",
+				"#966386",
+				"#9a78b0",
+				"#56b4d3"
 			]
 		},
 		{
