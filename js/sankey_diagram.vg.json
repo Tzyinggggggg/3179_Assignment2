@@ -683,48 +683,38 @@
 			"name": "color",
 			"type": "ordinal",
 			"range": [
-				"#417D7A",
-				"#91C483",
-				"#FFB085",
-				"#DF7861",
-				"#9C3D54",
-				"#FF96AD",
-				"#E15FED",
-				"#90AACB",
-				"#005A8D",
-				"#556FB5",
-				"#2541B2",
-				"#3F52E3",
-				"#7692E4",
-				"#93ABD3",
-				"#B7657B",
-				"#A799B7",
-				"#AC66CC",
-				"#C689C6",
-				"#FFD372",
-				"#FE7E6D"
+				"#f3cf69",
+				"#ea9051",
+				"#f09b93",
+				"#966386",
+				"#9a78b0",
+				"#56b4d3",
+				"#538dab",
+				"#2d6073",
+				"#617e60",
+				"#1a9f92"
 			],
 			"domain": [
-				"Germany",
-				"Canada",
-				"United States",
-				"United Kingdom",
 				"Australia",
+				"Canada",
+				"Denmark",
+				"Germany",
 				"Japan",
-				"Switzerland",
 				"Netherlands",
 				"Sweden",
-				"Denmark",
-				"Software Engineers and Developers",
+				"Switzerland",
+				"United Kingdom",
+				"United States",
+				"Accountants",
+				"Civil Engineers",
+				"Doctors and Medical Practitioners",
+				"Electrical Engineers",
 				"Electronics Engineers",
+				"Engineering Managers",
+				"IT Data Analysts",
 				"Mechanical Engineers",
 				"Nurses",
-				"Doctors and Medical Practitioners",
-				"Civil Engineers",
-				"Electrical Engineers",
-				"Accountants",
-				"IT Data Analysts",
-				"Engineering Managers"
+				"Software Engineers and Developers"
 			]
 		},
 		{
@@ -854,7 +844,7 @@
 						"field": "scaledY1"
 					},
 					"fillOpacity": {
-						"value": 0.8
+						"value": 1
 					},
 					"tooltip": {
 						"signal": "datum.grpId + ' has average salary of ' + format(datum.total/11, ',.0f')"
@@ -965,7 +955,7 @@
 						},
 						"hover": {
 							"opacity": {
-								"value": 0.7
+								"value": 1
 							}
 						}
 					},
