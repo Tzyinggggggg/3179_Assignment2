@@ -2,7 +2,7 @@
 	"width": 580,
 	"height": 500,
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-	"description": "Average Count of all Country 2022 in GPB",
+	"description": "Average Salary of all Country 2022 in GPB",
 	"data": {
 		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Salary-Satisfaction-WLB.csv"
 	},
@@ -15,7 +15,7 @@
 				"min": 0,
 				"max": 37365,
 				"step": 500,
-				"name": "Count Range: "
+				"name": "Salary Range: "
 			}
 		},
 		{
@@ -109,7 +109,7 @@
 						"range": [30, 50, 100, 250, 500, 1000]
 					},
 					"format": ",",
-					"title": "Average Count",
+					"title": "Average Salary",
 					"legend": {
 						"format": ",.2s",
 						"labelFontSize": 11,

@@ -126,26 +126,31 @@
 					{
 						"type": "quantitative",
 						"field": "Happiness_Score",
+						"title": "Happiness Score",
 						"format": ".2f"
 					},
 					{
 						"type": "quantitative",
 						"field": "Healthy_Life_Expectancy",
+						"title": "Healthy Life Expectancy",
 						"format": ".2f"
 					},
 					{
 						"type": "quantitative",
 						"field": "Social_Support",
+						"title": "Social Support",
 						"format": ".2f"
 					},
 					{
 						"type": "quantitative",
 						"field": "Freedom",
+						"title": "Freedom",
 						"format": ".2f"
 					},
 					{
 						"type": "quantitative",
 						"field": "Corruption",
+						"title": "Corruption",
 						"format": ".2f"
 					}
 				]
