@@ -94,7 +94,14 @@
 							"South America",
 							"Africa"
 						],
-						"range": ["#FF5733", "#0072B5", "#F4A582", "#AEB3B7", "#FFC30F"]
+						"range": [
+							"#7ac3dc",
+							"#f6d988",
+							"#efa775",
+							"#f3afa9",
+							"#ab829f",
+							"#9a78b0"
+						]
 					},
 					"legend": { "title": "Regions" }
 				},
