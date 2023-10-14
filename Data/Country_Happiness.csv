@@ -1,4 +1,4 @@
-Country,Region,Year,Happiness Score,Healthy Life Expectancy,Social Support,Freedom,Corruption,
+Country,Region,Year,Happiness_Score,Healthy_Life_Expectancy,Social_Support,Freedom,Corruption,
 Finland,Europe,2022,7.82,78,1.26,0.74,0.53,
 Finland,Europe,2021,7.842,72,0.95,0.95,0.19,
 Finland,Europe,2020,7.81,72,0.95,0.95,0.20,
