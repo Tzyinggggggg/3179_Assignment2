@@ -15,8 +15,8 @@
 			}
 		}
 	},
-	"width": "container",
-	"height": 350,
+	"width": 400,
+	"height": 450,
 	"padding": { "top": 30, "bottom": 20 },
 	"transform": [
 		{ "filter": "datum['Happiness_Score']" },

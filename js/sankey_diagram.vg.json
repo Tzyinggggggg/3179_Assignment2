@@ -1,7 +1,7 @@
 {
 	"$schema": "https://vega.github.io/schema/vega/v3.0.json",
-	"height": 600,
-	"width": 1400,
+	"height": 500,
+	"width": 900,
 	"data": [
 		{
 			"name": "rawData",
@@ -29,7 +29,7 @@
 				{
 					"Country": "Germany",
 					"Occupation": "Doctors and Medical Practitioners",
-					"Count": 356390
+					"Count": 74371
 				},
 				{
 					"Country": "Germany",
@@ -129,7 +129,7 @@
 				{
 					"Country": "United States",
 					"Occupation": "Doctors and Medical Practitioners",
-					"Count": 233984
+					"Count": 203094
 				},
 				{
 					"Country": "United States",
