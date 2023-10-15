@@ -137,5 +137,5 @@
 			}
 		}
 	],
-	"config": { "view": { "stroke": "transparent" } }
+	"config": { "view": { "stroke": "transparent" }, "background": "#f6f6f6" }
 }

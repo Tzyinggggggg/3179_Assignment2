@@ -1,9 +1,4 @@
 Country,Employment_Rate,Continent
-Equatorial Guinea,93.57,Africa
-Botswana,81.81,Africa
-Libya,81.44,Africa
-Gabon,80,Africa
-South Africa,71.82,Africa
 Singapore,95.89,Asia
 Qatar,99.91,Asia
 Israel,96.14,Asia
@@ -29,3 +24,8 @@ Uruguay,91.27,South America
 Chile,92.91,South America
 Argentina,90.21,South America
 Brazil,87.92,South America
+Equatorial Guinea,93.57,Africa
+Botswana,81.81,Africa
+Libya,81.44,Africa
+Gabon,80,Africa
+South Africa,71.82,Africa
