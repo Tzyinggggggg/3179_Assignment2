@@ -10,11 +10,6 @@
 	margin: auto;
 }
 
-#headerImage {
-	width: 1500px;
-	height: 400px;
-}
-
 .headerContainer {
 	padding-bottom: 300px;
 	position: relative;
@@ -22,7 +17,7 @@
 }
 .headerText {
 	position: absolute;
-	color: #3f3d38;
+	color: #150050;
 	text-align: center;
 	top: 50%;
 	left: 50%;
@@ -42,101 +37,52 @@ hr {
 	border-top: 2px solid lightgrey;
 }
 
-#U {
-	color: #f7dbf0;
-	font-weight: bolder;
-	font-family: "Verdana";
-	font-size: 100px;
-	font-weight: 700;
-}
-
 /* colour */
-#hUnicorn {
+#NorthAmerica {
 	color: #f0d9ff;
 	font-size: 22px;
 	font-weight: bolder;
 }
-#unicornp {
+#Europe {
 	color: #6f38c5;
 	font-size: 22px;
 	font-weight: bolder;
 }
 
-#us {
+#Oceania {
 	color: #005a8d;
 	font-size: 22px;
 	font-weight: bolder;
 }
 
-#china {
+#Asia {
 	color: #ef9869;
 	font-size: 22px;
 	font-weight: bolder;
 }
 
-#india {
+#Qatar {
 	color: #ff96ad;
 	font-size: 22px;
 	font-weight: bolder;
 }
 
-#fintech {
+#UAE {
 	color: #c689c6;
 	font-size: 22px;
 	font-weight: bolder;
 }
 
-#ai {
+#Singapore {
 	color: #2541b2;
 	font-size: 22px;
 	font-weight: bolder;
 }
 
-#internet {
+#Luxembourg {
 	color: #ffab76;
 	font-size: 22px;
 	font-weight: bolder;
-}
-
-#ecommerce {
-	color: #877798;
-	font-size: 22px;
-	font-weight: bolder;
-}
-
-#cyber {
-	color: #768eb7;
-	font-size: 22px;
-	font-weight: bolder;
-}
-#unicorn {
-	color: #6f38c5;
-	font-weight: bold;
-	font-family: "Verdana";
-	font-size: 48px;
-	text-align: center;
-}
-#unicornh3 {
-	color: #6f38c5;
-	font-weight: bold;
-	font-family: "Verdana";
-	font-size: 28px;
-	text-align: center;
-}
-#red {
-	color: #b33030;
-	font-weight: bold;
-	font-family: "Verdana";
-	font-size: 42px;
-	text-align: center;
-}
-
-#darkblue {
-	color: #150050;
-	font-weight: bold;
-	font-family: "Georgia";
-	font-size: 28px;
-	text-align: center;
 }
 
 /* charts */
@@ -235,7 +181,7 @@ h3 {
 }
 
 p {
-	font-family: Helvetica;
+	font-family: "Trebuchet MS";
 	font-size: 22px;
 	text-align: justify;
 	padding-left: 100px;
