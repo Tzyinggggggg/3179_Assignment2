@@ -1,6 +1,6 @@
 {
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-	"background": "#f6f6f6",
+	"background": "#ede7e2",
 	"data": {
 		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Country_Happiness.csv",
 		"format": {

@@ -1,7 +1,7 @@
 {
 	"$schema": "https://vega.github.io/schema/vega/v3.0.json",
 	"height": 500,
-	"width": 900,
+	"width": 1100,
 	"data": [
 		{
 			"name": "rawData",
@@ -1037,5 +1037,5 @@
 			]
 		}
 	],
-	"config": { "view": { "stroke": null }, "background": null }
+	"config": { "view": { "stroke": null }, "background": "#ede7e2" }
 }

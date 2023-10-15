@@ -6,7 +6,7 @@
 
 .page {
 	width: 1200px;
-	background-color: #f6f6f6;
+	background-color: #ede7e2;
 	margin: auto;
 }
 
@@ -16,13 +16,13 @@
 }
 
 .headerContainer {
+	padding-bottom: 300px;
 	position: relative;
 	text-align: center;
 }
 .headerText {
 	position: absolute;
-	color: Black;
-
+	color: #3f3d38;
 	text-align: center;
 	top: 50%;
 	left: 50%;
@@ -134,7 +134,7 @@ hr {
 #darkblue {
 	color: #150050;
 	font-weight: bold;
-	font-family: "Verdana";
+	font-family: "Georgia";
 	font-size: 28px;
 	text-align: center;
 }
@@ -196,17 +196,18 @@ hr {
 
 .sankey-container {
 	width: 80%;
+	padding-left: 50px;
 }
 
 /* font in paragraph */
 body * {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Arial ", sans-serif;
 }
 
 h1 {
 	font-weight: 1000;
-	font-family: "Verdana";
-	font-size: 80px;
+	font-family: "Georgia";
+	font-size: 70px;
 	font-weight: 700;
 	color: "white";
 }
@@ -220,7 +221,7 @@ h1 {
 h2 {
 	align-items: justify;
 	text-align: center;
-	font-family: "Verdana";
+	font-family: "Georgia";
 	font-size: 42px;
 	color: #150050;
 }
@@ -228,12 +229,13 @@ h2 {
 h3 {
 	align-items: justify;
 	text-align: center;
-	font-family: "Verdana";
+	font-family: "Georgia";
 	font-size: 28px;
 	color: #150050;
 }
 
 p {
+	font-family: Helvetica;
 	font-size: 22px;
 	text-align: justify;
 	padding-left: 100px;
