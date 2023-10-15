@@ -70,7 +70,7 @@
 					</p>
 					<div id="choropleth_map" class="map-container"></div>
 					<p>
-						High GDP in North America, Western Europe, and Oceania stems from
+						High GDP in <span id="NorthAmerica">North America</span>, <span id="Europe">Western Europe</span>, and<span id="Oceania"> Oceania</span> stems from
 						strong institutions, an educated workforce, modern capital, and
 						entrepreneurial vigor. Western countries, with affordable education
 						for the masses, stable politics, and inviting policies, attract
@@ -93,14 +93,14 @@
 						spotlight the top 5 GDP giants in each region and see if they're
 						ready to party with international talent.
 					</p>
-
-					<div id="treemap" class="treemap-container"></div>
-					<p>Asia has the highest employment following by Europe</p>
-					<p>Qatar, 
-						the UAE, Singapore, and Luxembourg, strategically positioned
-						at key trade intersections, have evolved into economic powerhouses.
-						The influx of foreign investments and vibrant trade have ushered in a wealth of job opportunities, driving substantial GDP growth and attracting expats seeking employment in these dynamic high-GDP countries.</li>
-					</p>
+					<div class="treemap-container">
+						<div id="treemap" class="treemap-content"></div>
+						<div class="treemap-content">	
+						<p><span id="Asia">Asia</span> boasts the highest employment rates, surpassing <span id="Europe">Europe</span>.</p>
+						<p>Qatar,UAE,Singapore,and Luxembourg,located at crucial trade crossroads,have become economic powerhouses which results in high employment rate.</p>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 
@@ -118,10 +118,18 @@
 						potentially stunting job oppurtunities, and causing consumers to foot the
 						bill through higher prices.As such,expat will have less job oppurtunities 
 					</p>
-					<div id="sunburst" class="sunburst-container"></div>
+					<div class="sunburst-container">
+					<div class="sunburst-content">
 					<p>Asia has the lowest total tax rate following by Europe.</p>
-					<p>Qatar, UAE, Singapore, and Luxembourg boast the lowest tax rates in their respective continents, making them magnets for expats. High income and low taxes are the magic combo here. These nations rely on foreign workers and investments, so they keep taxes low to keep their economic engine running. They're top picks for expat work!</p>
+					<p>Qatar, UAE, Singapore, and Luxembourg boast the lowest tax rates in their respective continents.
+						High income and low taxes.</p>
 					</p>
+					<p>They're top picks for expat work!</p>
+					</p>
+					</div>
+					<div id="sunburst" class="sunburst-content"></div>
+				</div>
+					
 				</div>
 			</div>
 
@@ -130,15 +138,19 @@
 			<!-- pure grid group -->
 			<div class="pure-g">
 				<div class="pure-u-1-1">
-					<h2>Average Salary,Work Life Balance and Life Satisfaction</h2>
+					<h2>Work Life Balance & Life Satisfaction</h2>
 					<p>
-					While economic factors are important, they're not the only indicator.As an expat, you'll want to know if you'll be able to enjoy your life in your new home so you will have motivation to work long term.
+					Beyond economic considerations, the quality of life in your new home as an expat is a vital factor, as it determines your motivation for long-term commitment.
 					</p>
-					<div id="scatterplot" class="scatterplot-container"></div>
+					<div class="scatterplot-container">
+					<div id="scatterplot" class="scatterplot-content"></div>
+					<div class="scatterplot-content2">
 					<p>
-						In the big picture, higher salaries seem to bring more life satisfaction. Northern Europe, Western Europe, and Western countries top the charts with both great salaries and contentment. If you seek work-life balance and aren't too concerned about taxes, Europe shines as the ideal destination.
-					</p>
-				</div>
+					Higher salaries == Higher Life Satisfaction</p>
+					<p>Europe and Western countries top the charts with both great salaries and contentment. </p>
+					<p>If you seek work-life balance and aren't too concerned about taxes, Europe shines as the ideal destination.</p>
+					</div>
+					</div>
 			</div>
 
 			<!-- end pure grid group -->
@@ -167,11 +179,14 @@
 					<h2>Top 15 Most Demanded Job</h2>
 					<p>
 						Now let's equip ourselves into the right field in order to become an expat.Here are the top 15 most demanded job in whole world by Michael Page.
-					<div id="donut" class="donut-container"></div>
+					<div id="donut" class="donut-center"></div>
+						<div class="donut-container">
+						<div class="donut-content">
 					<p>Engineering,IT and Healthcare are the most demanding field in the whole world.</p>
+				</div>
+					</div>
 				</div>		
 			</div>
-
 			<!-- end pure grid group -->
 			<hr />
 			<!-- pure grid group -->
@@ -184,16 +199,13 @@
 					<p>
 					Doctors enjoy the highest salaries among sought-after occupations, followed by Engineering Managers and Software Engineers. The United States leads with the highest average salaries for these in-demand careers, followed by Switzerland and Australia.
 					</p>
-				</div>
-
-					
+				</div>	
 			</div>
-
+<hr />
 			<!--footer-->
 			<div class="pure-g">
 				<div class="pure-u-1-1">
 					<div class="headerContainer">
-						<img src="img/header.jpg" , id="headerImage" />
 						<div class="headerText">
 							<p id="footer">Visualisation by Saw Tze Ying</p>
 							<p id="footer">

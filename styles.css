@@ -39,24 +39,24 @@ hr {
 
 /* colour */
 #NorthAmerica {
-	color: #f0d9ff;
+	color: #faba0a;
 	font-size: 22px;
 	font-weight: bolder;
 }
 #Europe {
-	color: #6f38c5;
+	color: #7ac3dc;
 	font-size: 22px;
 	font-weight: bolder;
 }
 
 #Oceania {
-	color: #005a8d;
+	color: #efa775;
 	font-size: 22px;
 	font-weight: bolder;
 }
 
 #Asia {
-	color: #ef9869;
+	color: #9a78b0;
 	font-size: 22px;
 	font-weight: bolder;
 }
@@ -99,28 +99,54 @@ hr {
 }
 
 .treemap-container {
-	float: left;
-	width: 60%;
-	padding-left: 100px;
-	padding-bottom: 20px;
+	display: flex;
+	margin-left: 100px;
+	margin-right: 50px;
+}
+
+.treemap-content {
+	flex: 1;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sunburst-container {
-	float: right;
-	width: 60;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	display: flex;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.sunburst-content {
+	flex: 1;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .scatterplot-container {
-	float: left;
-	width: 70%;
-	padding-left: 50px;
-	padding-right: 15px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	display: flex;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.scatterplot-content {
+	flex: 1;
+	border: 2px solid yellow;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.scatterplot-content2 {
+	flex: 1;
+	border: 2px solid yellow;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 0px;
+	margin-right: 500px;
 }
 
 .parallel-container {
@@ -131,25 +157,34 @@ hr {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-.donut-container {
-	float: left;
-	width: 60%;
-	padding-left: 80px;
-	padding-right: 20px;
-	padding-top: 15px;
-	padding-bottom: 0px;
+.donut-center {
+	width: 60;
+	padding-left: 400px;
+	padding-right: 400px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
+.donut-container {
+	position: center;
+	display: flex-end;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.donut-content {
+	flex: 1;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
 .sankey-container {
 	width: 80%;
 	padding-left: 50px;
 }
 
 /* font in paragraph */
-body * {
-	font-family: "Arial ", sans-serif;
-}
-
 h1 {
 	font-weight: 1000;
 	font-family: "Georgia";
@@ -165,6 +200,8 @@ h1 {
 }
 
 h2 {
+	margin-left: auto;
+	margin-right: auto;
 	align-items: justify;
 	text-align: center;
 	font-family: "Georgia";
@@ -194,13 +231,17 @@ p {
 }
 
 .description-right {
-	padding-left: 20px;
+	padding-left: 600px;
+	float: right;
 }
 
 .description-left {
 	padding-right: 20px;
 }
 
+.description-bottom {
+	padding-bottom: 500px;
+}
 .grid {
 	margin-bottom: 40px;
 }
