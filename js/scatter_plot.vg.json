@@ -121,7 +121,7 @@
 					"type": "nominal",
 					"title": "Continent",
 					"scale": {
-						"range": ["#99bda4", "#f09b93", "#9a78b0", "#f6d988", "#7ac3dc"]
+						"range": ["#7ac3dc", "#f6d988", "#efa775", "#f5a290", "#9a78b1"]
 					},
 					"legend": {
 						"title": "Continent",
