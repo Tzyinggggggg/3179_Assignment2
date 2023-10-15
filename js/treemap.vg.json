@@ -1,6 +1,5 @@
 {
 	"$schema": "https://vega.github.io/schema/vega/v5.json",
-	"title": { "text": "Employment Rate", "fontSize": 14, "font": "Verdana" },
 	"width": 600,
 	"height": 600,
 	"padding": 5,
@@ -51,11 +50,11 @@
 			"type": "ordinal",
 			"domain": { "data": "gapminder", "field": "Continent" },
 			"range": [
-				"#99bda4",
-				"#f09b93",
 				"#9a78b0",
-				"#f6d988",
 				"#7ac3dc",
+				"#f6d988",
+				"#efa775",
+				"#f09b93",
 				"#966386"
 			]
 		},
@@ -170,5 +169,5 @@
 			}
 		}
 	],
-	"config": { "view": { "stroke": null }, "background": null }
+	"config": { "view": { "stroke": null }, "background": "#f6f6f6" }
 }

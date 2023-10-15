@@ -1,142 +1,121 @@
 {
-	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-	"width": 400,
-	"height": 650,
-	"data": {
-		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Top15-In-DemandProfessionsDataset.csv"
-	},
-
-	"params": [
+	"$schema": "https://vega.github.io/schema/vega/v5.json",
+	"width": 700,
+	"height": 700,
+	"background": "#f6f6f6",
+	"padding": 5,
+	"autosize": "none",
+	"title": "Tax Rate of Different Countries 2023",
+	"data": [
 		{
-			"name": "select_sector",
-			"bind": {
-				"input": "select",
-				"options": [
-					"All Sector",
-					"Technology",
-					"Science & Engineering",
-					"Healthcare",
-					"Accountancy",
-					"Construction",
-					"Education",
-					"Sales"
-				],
-				"labels": [
-					"All Sector",
-					"Technology",
-					"Science & Engineering",
-					"Healthcare",
-					"Accountancy",
-					"Construction",
-					"Education",
-					"Sales"
-				],
-				"name": "Select Sector:"
-			}
-		}
-	],
-	"transform": [
-		{
-			"filter": "if(select_sector !=null, datum.Sector == select_sector, datum.Sector == 'All Sector')"
-		}
-	],
-	"encoding": {
-		"theta": {
-			"field": "Count",
-			"type": "quantitative",
-			"scale": {
-				"type": "linear"
-			},
-			"stack": true
-		},
-		"color": {
-			"field": "Occupation",
-			"type": "nominal",
-			"scale": {
-				"domain": [
-					"Accountants",
-					"Civil engineers",
-					"Doctors and medical practitioners",
-					"Electrical engineers",
-					"Electronics engineers",
-					"Engineering managers",
-					"IT data analysts",
-					"Mechanical engineers",
-					"Nurses",
-					"Software engineers and developers",
-					"Surveyors",
-					"Secondary school teachers",
-					"Psychologists",
-					"Sales executives",
-					"Database and network professionals"
-				],
-				"range": [
-					"#f3cf69",
-					"#ea9051",
-					"#f09b93",
-					"#966386",
-					"#9a78b0",
-					"#56b4d3",
-					"#538dab",
-					"#2d6073",
-					"#617e60",
-					"#99bda4",
-					"#b19068",
-					"#b08581",
-					"#45453c",
-					"#d9c6ae",
-					"#d7613f"
-				]
-			}
-		},
-		"tooltip": [
-			{ "field": "Occupation", "type": "nominal", "title": "Occupation" },
-			{
-				"field": "Count",
-				"type": "quantitative",
-				"title": "Number of Countries"
-			}
-		]
-	},
-	"layer": [
-		{ "mark": { "type": "arc", "outerRadius": 220, "innerRadius": 120 } },
-		{
-			"mark": {
-				"type": "text",
-				"radius": 280,
-				"fontStyle": "bold",
-				"font": "Verdana"
-			},
-			"encoding": {
-				"text": { "field": "Occupation", "type": "nominal" },
-				"fillOpacity": {
-					"condition": {
-						"test": "datum['Count'] == 24 || datum['Count'] == 19  || datum['Count'] == 18||datum['Count'] == 16",
-						"value": 1
-					},
-					"value": 0
+			"name": "tree",
+			"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/TaxRate.json",
+			"transform": [
+				{
+					"type": "stratify",
+					"key": "id",
+					"parentKey": "parent"
 				},
-				"color": { "value": "black" }
-			}
-		},
-
-		{
-			"mark": {
-				"type": "text",
-				"fontSize": 22,
-				"fontStyle": "bold",
-				"color": "black",
-				"font": "Verdana"
-			},
-			"encoding": {
-				"text": { "field": "Sector", "type": "nominal" },
-				"color": { "value": "black" }
-			}
+				{
+					"type": "partition",
+					"field": "size",
+					"sort": { "field": "value" },
+					"size": [{ "signal": "2 * PI" }, { "signal": "width / 2" }],
+					"as": ["a0", "r0", "a1", "r1", "depth", "children"]
+				}
+			]
 		}
 	],
-	"config": {
-		"view": { "stroke": null },
-		"background": "#F6F6F6",
-		"legend": { "labelFontSize": 10, "labelLimit": 180 }
-	}
+
+	"scales": [
+		{
+			"name": "color",
+			"type": "ordinal",
+			"domain": { "data": "tree", "field": "color" },
+			"range": [
+				"#9a78b1",
+				"#ab829f",
+				"#7ac3dc",
+				"#f6d988",
+				"#efa775",
+				"#f3afa9"
+			]
+		}
+	],
+
+	"marks": [
+		{
+			"type": "arc",
+			"from": { "data": "tree" },
+			"encode": {
+				"enter": {
+					"x": { "signal": "width / 2" },
+					"y": { "signal": "height / 2" },
+					"fill": [
+						{
+							"test": "datum.id != 1",
+							"scale": "color",
+							"field": "color"
+						},
+						{ "value": "white" }
+					],
+					"fillOpacity": [
+						{ "test": "datum.depth == 2", "value": 0.5 },
+						{ "value": 1 }
+					],
+					"tooltip": {
+						"signal": "{\"Country:\": datum.name, \"Tax Rate:\": datum.size + '%'}"
+					}
+				},
+				"update": {
+					"startAngle": { "field": "a0" },
+					"endAngle": { "field": "a1" },
+					"innerRadius": { "field": "r0" },
+					"outerRadius": { "field": "r1" },
+					"stroke": { "value": "white" },
+					"strokeWidth": { "value": 0.5 },
+					"zindex": { "value": 0 }
+				},
+				"hover": {
+					"stroke": { "value": "red" },
+					"strokeWidth": { "value": 2 },
+					"zindex": { "value": 1 }
+				}
+			}
+		},
+		{
+			"type": "text",
+			"from": { "data": "tree" },
+			"encode": {
+				"enter": {
+					"text": {
+						"signal": "datum.name + (datum.size? '      (' + datum.size + '%)' : '')"
+					},
+					"fontSize": [
+						{ "test": "datum.size > 5", "value": 8 },
+						{ "test": "datum.parent == 1", "value": 14 },
+						{ "value": 0 }
+					],
+					"fontWeight": [
+						{ "test": "datum.parent == 1", "value": "600" },
+						{ "value": 100 }
+					],
+					"baseline": { "value": "middle" },
+					"align": { "value": "center" },
+					"clip": { "value": true }
+				},
+				"update": {
+					"x": { "signal": "width / 2" },
+					"y": { "signal": "height / 2" },
+					"radius": {
+						"signal": "(datum['r0'] == 0 ? 0 : datum['r0'] + datum['r1']) / 2"
+					},
+					"theta": { "signal": "(datum['a0'] + datum['a1']) / 2" },
+					"angle": {
+						"signal": "datum['r0'] == 0 ? 0 : ((datum['a0'] + datum['a1']) / 2) * 180 / PI + (inrange(((datum['a0'] + datum['a1']) / 2) % (2 * PI), [0, PI]) ? 270 : 90)"
+					}
+				}
+			}
+		}
+	]
 }

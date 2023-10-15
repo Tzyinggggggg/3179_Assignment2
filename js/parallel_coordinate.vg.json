@@ -1,7 +1,6 @@
 {
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-	"background": "white",
-	"title": { "text": "Happiest Continent", "color": "black" },
+	"background": "#f6f6f6",
 	"data": {
 		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Country_Happiness.csv",
 		"format": {
@@ -91,6 +90,7 @@
 							"Asia",
 							"Europe",
 							"North America",
+							"Oceania",
 							"South America",
 							"Africa"
 						],
@@ -99,11 +99,11 @@
 							"#f6d988",
 							"#efa775",
 							"#f3afa9",
-							"#ab829f",
-							"#9a78b0"
+							"#9a78b1",
+							"#ab829f"
 						]
 					},
-					"legend": { "title": "Regions" }
+					"legend": { "title": "Continent" }
 				},
 				"detail": { "type": "nominal", "field": "index" },
 				"opacity": {
