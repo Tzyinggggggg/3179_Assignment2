@@ -110,20 +110,6 @@
 		"color": 2
 	},
 	{
-		"id": 18,
-		"name": "South Korea",
-		"parent": 3,
-		"size": 33,
-		"color": 2
-	},
-	{
-		"id": 19,
-		"name": "Malaysia",
-		"parent": 3,
-		"size": 39,
-		"color": 2
-	},
-	{
 		"id": 20,
 		"name": "Luxembourg",
 		"parent": 4,

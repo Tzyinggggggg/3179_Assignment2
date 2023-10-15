@@ -33,7 +33,7 @@
 	<body>
 		<div class="page">
 			<!-- pure grid group -->
-			<div class="pure-g">
+			<div class="grid">
 				<div class="pure-u-1-1">
 					<div class="headerContainer">
 						<img src="img/header.jpg" , id="headerImage" />
@@ -59,17 +59,20 @@
 			<!-- end pure grid group -->
 
 			<!-- pure grid group -->
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<h3>World GDP 2023</h3>
-					A country's GDP reflects the overall economic health and prosperity of
-					the nation. Generally, countries with higher GDP per capita tend to
-					have better job opportunities, higher salaries, and a higher standard
-					of living.
+			<div class="grid">
+				<div class="description h1">
+					<h2>World GDP 2023</h2>
+					<p>
+						GDP is the financial pulse of a nation, offering a vital peek into
+						its economic vitality and overall prosperity. It's not just a
+						number; it's a window into the well-being of a country. Higher GDP
+						per capita signifies a robust economy with ample job opportunities,
+						akin to a bustling job marketplace.
+					</p>
 					<div id="choropleth_map" class="map-container"></div>
 					<p>
-						North America,Europe and Oceania have the highest GDP while Africa
-						has the lowest GDP.
+						North America, Europe, and Oceania waltz at the top with high GDP,
+						while Africa with the lowest GDP.
 					</p>
 				</div>
 			</div>
@@ -79,20 +82,40 @@
 			<!-- pure grid group -->
 			<div class="pure-g">
 				<div class="pure-u-1-1">
-					<h2>Employment Rates in the Top 5 GDP Countries Across Continents</h2>
-					<p></p>
+					<h2>Employment Rates 2023</h2>
+					<p>
+						Now, let's shift our focus from the glitz of GDP to the global job
+						market, donning our special "employment spectacles" to see which
+						countries are rolling out the welcome mat for expats. We'll
+						spotlight the top 5 GDP giants in each region and see if they're
+						ready to party with international talent.
+					</p>
+
+					<div id="treemap" class="treemap-container"></div>
+					<p>Why Europe has higher unemployment rate than Asia?</p>
+					<p>
+						1. Europe's rigid labor rules that can make it more difficult for
+						employers to hire and fire workers.
+					</p>
+					<p>
+						2. Unemployment Protection Mechanisms in EU provide social support
+						lead to prolonged periods of unemployment.
+					</p>
+					<p>
+						3. Cultural differences, as Asians are generally taught to be more
+						diligent, while Westerners are often encouraged to enjoy life.
+					</p>
+					<p>(Furuoka et al., 2019)</p>
 				</div>
 			</div>
-			<div class="pure-u-1-1">
-				<div id="treemap" class="treemap-container"></div>
-			</div>
+
 			<!-- end pure grid group -->
 
 			<hr />
 			<!-- pure grid group -->
 			<div class="pure-g">
 				<div class="pure-u-1-1">
-					<h2>Top 10 Countries with Most <span id="unicorn">Unicorns</span></h2>
+					<h2>Tax Rates 2023</h2>
 					<p>Let's</p>
 					<div id="sunburst" class="sunburst-container"></div>
 				</div>
@@ -150,9 +173,7 @@
 					<div class="headerContainer">
 						<img src="img/header.jpg" , id="headerImage" />
 						<div class="headerText">
-							<p id="footer">
-								Visualisation by Saw Tze Ying
-							</p>
+							<p id="footer">Visualisation by Saw Tze Ying</p>
 							<p id="footer">
 								Dataset by Aspersh Upadhyay obtained from Kaggle
 							</p>
