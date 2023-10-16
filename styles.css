@@ -145,12 +145,17 @@ hr {
 }
 
 .parallel-container {
-	float: right;
-	width: 60;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	display: flex;
+	margin-left: 100px;
+	margin-right: 50px;
+}
+
+.parallel-content {
+	flex: 1;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .parallel-description {
