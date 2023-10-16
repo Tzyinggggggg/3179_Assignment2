@@ -69,6 +69,52 @@ hr {
 	font-weight: bolder;
 }
 
+#Engineer {
+	color: #56b4d3;
+	font-size: 30px;
+	font-weight: bolder;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+#IT {
+	color: #99bda4;
+	font-size: 30px;
+	font-weight: bolder;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+#Healthcare {
+	color: #f19c93;
+	font-size: 30px;
+	font-weight: bolder;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+#US {
+	color: #99bda4;
+	font-size: 30px;
+	font-weight: bolder;
+	font-size: 30px;
+	font-weight: bolder;
+}
+#Australia {
+	color: #f2c343;
+	font-size: 30px;
+	font-weight: bolder;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+#Switzerland {
+	color: #2d5f72;
+	font-size: 30px;
+	font-weight: bolder;
+	font-size: 30px;
+	font-weight: bolder;
+}
 /* charts */
 
 .vis-container {
@@ -167,26 +213,12 @@ hr {
 
 .donut-center {
 	width: 60;
-	padding-left: 400px;
-	padding-right: 400px;
+	padding-left: 300px;
+	padding-right: 100px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.donut-container {
-	position: center;
-	display: flex-end;
-	margin-left: 100px;
-	margin-right: 100px;
-}
-
-.donut-content {
-	flex: 1;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
 .alluvia-container {
 	width: 80%;
 	padding-left: 50px;
