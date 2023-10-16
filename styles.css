@@ -45,43 +45,19 @@ hr {
 }
 #Europe {
 	color: #7ac3dc;
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: bolder;
 }
 
 #Oceania {
 	color: #efa775;
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: bolder;
 }
 
 #Asia {
 	color: #9a78b0;
-	font-size: 22px;
-	font-weight: bolder;
-}
-
-#Qatar {
-	color: #ff96ad;
-	font-size: 22px;
-	font-weight: bolder;
-}
-
-#UAE {
-	color: #c689c6;
-	font-size: 22px;
-	font-weight: bolder;
-}
-
-#Singapore {
-	color: #2541b2;
-	font-size: 22px;
-	font-weight: bolder;
-}
-
-#Luxembourg {
-	color: #ffab76;
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: bolder;
 }
 
@@ -95,7 +71,6 @@ hr {
 
 .map-container {
 	width: 50%;
-	padding-left: 100px;
 }
 
 .treemap-container {
@@ -112,6 +87,13 @@ hr {
 	margin-right: auto;
 }
 
+.treemap-description {
+	flex: 1;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 50px;
+}
+
 .sunburst-container {
 	display: flex;
 	margin-left: 100px;
@@ -126,27 +108,32 @@ hr {
 	margin-right: auto;
 }
 
+.sunburst-description {
+	flex: 1;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 50px;
+}
+
 .scatterplot-container {
 	display: flex;
 	margin-left: 100px;
-	margin-right: 100px;
+	margin-right: 50px;
 }
 
 .scatterplot-content {
 	flex: 1;
-	border: 2px solid yellow;
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
-.scatterplot-content2 {
+
+.scatterplot-description {
 	flex: 1;
-	border: 2px solid yellow;
-	margin-top: auto;
 	margin-bottom: auto;
-	margin-left: 0px;
-	margin-right: 500px;
+	margin-top: auto;
+	padding-right: 50px;
 }
 
 .parallel-container {
@@ -217,12 +204,15 @@ h3 {
 	color: #150050;
 }
 
+.description {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
 p {
 	font-family: "Trebuchet MS";
 	font-size: 22px;
 	text-align: justify;
-	padding-left: 100px;
-	padding-right: 100px;
 }
 
 #footer {
@@ -239,9 +229,6 @@ p {
 	padding-right: 20px;
 }
 
-.description-bottom {
-	padding-bottom: 500px;
-}
 .grid {
 	margin-bottom: 40px;
 }
