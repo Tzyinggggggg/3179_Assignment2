@@ -29,12 +29,20 @@
 	text-align: center;
 }
 
+.pure-g {
+	flex-flow: nowrap;
+	flex-direction: column;
+}
+
 /* line */
 hr {
 	display: block;
 	height: 1px;
 	border: 0;
 	border-top: 2px solid lightgrey;
+	margin: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 /* colour */
@@ -144,6 +152,14 @@ hr {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
+.parallel-description {
+	flex: 1;
+	margin-bottom: auto;
+	margin-top: auto;
+	padding-right: 50px;
+}
+
 .donut-center {
 	width: 60;
 	padding-left: 400px;
