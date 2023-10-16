@@ -159,6 +159,7 @@
 			<!-- pure grid group -->
 			<div class="pure-g">
 				<div class="pure-u-1-1">
+			
 					<h2>Happiness Scores 2018 - 2022</h2>
 					<p>
 					Now let's look at the happiness score of each country. Happiness score is a metric that measures the happiness of a country's citizens. It is calculated by taking the average of the country's happiness score from 2018 to 2022.
@@ -169,6 +170,7 @@
 					<p>Qatar, UAE, Singapore, and Luxembourg boast the lowest tax rates in their respective continents, making them magnets for expats. High income and low taxes are the magic combo here. These nations rely on foreign workers and investments, so they keep taxes low to keep their economic engine running. They're top picks for expat work!</p>
 					</p>
 				</div>
+	
 			</div>
 
 			<!-- end pure grid group -->
@@ -195,7 +197,7 @@
 					<h2>
 					Salary of Most Demanded Jobs
 					</h2>
-					<div id="sankey" class="sankey-container"></div>
+					<div id="alluvia" class="alluvia-container"></div>
 					<p>
 					Doctors enjoy the highest salaries among sought-after occupations, followed by Engineering Managers and Software Engineers. The United States leads with the highest average salaries for these in-demand careers, followed by Switzerland and Australia.
 					</p>
@@ -228,7 +230,7 @@
 			var scatterplot = "js/scatter_plot.vg.json";
 			var parallel_coordinate = "js/parallel_coordinate.vg.json";
 			var donut = "js/donut_chart.vg.json";
-			var sankey = "js/sankey_diagram.vg.json";
+			var alluvia = "js/alluvia.vg.json";
 
 			vegaEmbed("#choropleth_map", choropleth_map, { actions: false })
 				.then(function (result) {
@@ -266,7 +268,7 @@
 				})
 				.catch(console.error);
 
-			vegaEmbed("#sankey", sankey, { actions: false })
+			vegaEmbed("#alluvia", alluvia, { actions: false })
 				.then(function (result) {
 					// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 				})
