@@ -2,14 +2,14 @@
 	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 	"background": "#ede7e2",
 	"data": {
-		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Country_Happiness.csv",
+		"url": "https://raw.githubusercontent.com/Tzyinggggggg/3179_Assignment2/main/Data/Happiness_Country.csv",
 		"format": {
 			"type": "csv",
 			"parse": {
 				"Year": "number",
-				"Happiness_Score": "number",
-				"Healthy_Life_Expectancy": "number",
-				"Social_Support": "number",
+				"Happiness Score": "number",
+				"Healthy Life Expectancy": "number",
+				"Social Support": "number",
 				"Freedom": "number",
 				"Corruption": "number"
 			}
@@ -19,13 +19,13 @@
 	"height": 400,
 	"padding": { "top": 30, "bottom": 20 },
 	"transform": [
-		{ "filter": "datum['Happiness_Score']" },
+		{ "filter": "datum['Happiness Score']" },
 		{ "window": [{ "op": "count", "as": "index" }] },
 		{
 			"fold": [
-				"Happiness_Score",
-				"Healthy_Life_Expectancy",
-				"Social_Support",
+				"Happiness Score",
+				"Healthy Life Expectancy",
+				"Social Support",
 				"Freedom",
 				"Corruption"
 			]
@@ -125,19 +125,19 @@
 					{ "type": "nominal", "field": "Region" },
 					{
 						"type": "quantitative",
-						"field": "Happiness_Score",
+						"field": "Happiness Score",
 						"title": "Happiness Score",
 						"format": ".2f"
 					},
 					{
 						"type": "quantitative",
-						"field": "Healthy_Life_Expectancy",
+						"field": "Healthy Life Expectancy",
 						"title": "Healthy Life Expectancy",
 						"format": ".2f"
 					},
 					{
 						"type": "quantitative",
-						"field": "Social_Support",
+						"field": "Social Support",
 						"title": "Social Support",
 						"format": ".2f"
 					},
